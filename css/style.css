@@ -450,14 +450,24 @@ html, body {
   background-color: #67FFA9;
 }
 
-.wrapper {
-	padding: 1.5rem 3rem;
+a {
+  color: #222;
 }
 
 ul, li {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+nav {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.wrapper {
+  padding: 1.5rem 3rem;
 }
 
 .preview__wrapper {
@@ -484,105 +494,82 @@ ul, li {
 .preview {
 	position: absolute;
   text-align: center;
+  border: 0.1rem solid #222;
+}
+
+.preview h4 {
+  margin: 0.3rem auto 0 auto;
 }
 
 .preview .img {
   background-color: #D8D8D8;
   opacity: 0.8;
+  width: 100%;
+  height: 100%;
 }
 
 .preview .img:hover {
-  -moz-box-shadow:    3px 3px 5px 6px #434343;
-  -webkit-box-shadow: 3px 3px 5px 6px #434343;
-  box-shadow:         3px 3px 5px 6px #434343;
+  -moz-box-shadow:    3px 3px 5px 6px #222;
+  -webkit-box-shadow: 3px 3px 5px 6px #222;
+  box-shadow:         3px 3px 5px 6px #222;
 }
 
 .preview:nth-child(1) {
-  color: red;
+  width: 240px;
+  height: 165px;
   top: 0;
   left: 0;
-}
-
-.preview:nth-child(1) .img {
-  width: 263px;
-  height: 165px;
 }
 
 .preview:nth-child(2) {
-  color: blue;
-  top: 10%;
-  left: 30%;
-}
-
-.preview:nth-child(2) .img {
-  width: 221px;
-  height: 197px; 
+  width: 215px;
+  height: 170px; 
+  top: 5%;
+  left: 36%;
 }
 
 .preview:nth-child(3) {
-  color: gray;
+  width: 280px;
+  height: 120px;
   top: 0;
-  right: 25%;
-}
-
-.preview:nth-child(3) .img {
-  width: 288px;
-  height: 197px; 
-}
-
-.preview:nth-child(4) {
-  color: green;
-  top: 30%;
-  left: 10%;
-}
-
-.preview:nth-child(4) .img {
-  width: 263px;
-  height: 211px;
-}
-
-.preview:nth-child(5) {
-  color: pink;
-  bottom: 6%;
-  left: 35%;
-}
-
-.preview:nth-child(5) .img {
-  width: 242px;
-  height: 362px;
-}
-
-.preview:nth-child(6) {
-  color: brown;
-  width: 263px;
-  height: 197px;
-  bottom: 35%;
   right: 10%;
 }
 
-.preview:nth-child(6) .img {
+.preview:nth-child(4) {
+  width: 263px;
+  height: 180px;
+  top: 35%;
+  left: 10%;
+}
+
+.preview:nth-child(5) {
+  width: 242px;
+  height: 362px;
+  bottom: 6%;
+  left: 38%;
+}
+
+.preview:nth-child(6) {
   width: 263px;
   height: 197px;
+  bottom: 37%;
+  right: 4%;
 }
 
 .preview:nth-child(7) {
-  color: orange;
-  bottom: 0;
-  left: 0;
-}
-
-.preview:nth-child(7) .img {
   width: 263px;
   height: 191px;
+  bottom: 0;
+  left: 3%;
 }
 
 .preview:nth-child(8) {
-  color: fuchsia;
-  bottom: 5%;
+  width: 361px;
+  height: 197px;
+  bottom: 0;
   right: 0;
 }
 
-.preview:nth-child(8) .img {
-  width: 361px;
-  height: 197px;
+footer {
+  margin: 9rem auto 0 auto;
 }
