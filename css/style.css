@@ -572,4 +572,11 @@ nav {
 
 footer {
   margin: 9rem auto 0 auto;
+  border-top: 0.1rem solid #222;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  width: 47%;
 }
