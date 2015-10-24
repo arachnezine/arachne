@@ -54,6 +54,41 @@
 
 /** Liberation **/
 
+@font-face {
+    font-family: 'liberation_sansregular';
+    src: url('../fonts/liberationsans-regular-webfont.eot');
+    src: url('../fonts/liberationsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/liberationsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/liberationsans-regular-webfont.woff') format('woff'),
+         url('../fonts/liberationsans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/liberationsans-regular-webfont.svg#liberation_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'liberation_sansitalic';
+    src: url('../fonts/liberationsans-italic-webfont.eot');
+    src: url('../fonts/liberationsans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/liberationsans-italic-webfont.woff2') format('woff2'),
+         url('../fonts/liberationsans-italic-webfont.woff') format('woff'),
+         url('../fonts/liberationsans-italic-webfont.ttf') format('truetype'),
+         url('../fonts/liberationsans-italic-webfont.svg#liberation_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'liberation_sansbold';
+    src: url('../fonts/liberationsans-bold-webfont.eot');
+    src: url('../fonts/liberationsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/liberationsans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/liberationsans-bold-webfont.woff') format('woff'),
+         url('../fonts/liberationsans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/liberationsans-bold-webfont.svg#liberation_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'liberation_sansbold_italic';
@@ -63,54 +98,6 @@
          url('../fonts/liberationsans-bolditalic-webfont.woff') format('woff'),
          url('../fonts/liberationsans-bolditalic-webfont.ttf') format('truetype'),
          url('../fonts/liberationsans-bolditalic-webfont.svg#liberation_sansbold_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'liberation_serifbold';
-    src: url('../fonts/liberationserif-bold-webfont.eot');
-    src: url('../fonts/liberationserif-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/liberationserif-bold-webfont.woff2') format('woff2'),
-         url('../fonts/liberationserif-bold-webfont.woff') format('woff'),
-         url('../fonts/liberationserif-bold-webfont.ttf') format('truetype'),
-         url('../fonts/liberationserif-bold-webfont.svg#liberation_serifbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'liberation_serifbold_italic';
-    src: url('../fonts/liberationserif-bolditalic-webfont.eot');
-    src: url('../fonts/liberationserif-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/liberationserif-bolditalic-webfont.woff2') format('woff2'),
-         url('../fonts/liberationserif-bolditalic-webfont.woff') format('woff'),
-         url('../fonts/liberationserif-bolditalic-webfont.ttf') format('truetype'),
-         url('../fonts/liberationserif-bolditalic-webfont.svg#liberation_serifbold_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'liberation_serifitalic';
-    src: url('../fonts/liberationserif-italic-webfont.eot');
-    src: url('../fonts/liberationserif-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/liberationserif-italic-webfont.woff2') format('woff2'),
-         url('../fonts/liberationserif-italic-webfont.woff') format('woff'),
-         url('../fonts/liberationserif-italic-webfont.ttf') format('truetype'),
-         url('../fonts/liberationserif-italic-webfont.svg#liberation_serifitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'liberation_serifregular';
-    src: url('../fonts/liberationserif-regular-webfont.eot');
-    src: url('../fonts/liberationserif-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/liberationserif-regular-webfont.woff2') format('woff2'),
-         url('../fonts/liberationserif-regular-webfont.woff') format('woff'),
-         url('../fonts/liberationserif-regular-webfont.ttf') format('truetype'),
-         url('../fonts/liberationserif-regular-webfont.svg#liberation_serifregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -159,42 +146,6 @@
          url('../fonts/liberationmono-regular-webfont.woff') format('woff'),
          url('../fonts/liberationmono-regular-webfont.ttf') format('truetype'),
          url('../fonts/liberationmono-regular-webfont.svg#liberation_monoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'liberation_sansbold';
-    src: url('../fonts/liberationsans-bold-webfont.eot');
-    src: url('../fonts/liberationsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/liberationsans-bold-webfont.woff2') format('woff2'),
-         url('../fonts/liberationsans-bold-webfont.woff') format('woff'),
-         url('../fonts/liberationsans-bold-webfont.ttf') format('truetype'),
-         url('../fonts/liberationsans-bold-webfont.svg#liberation_sansbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'liberation_sansitalic';
-    src: url('../fonts/liberationsans-italic-webfont.eot');
-    src: url('../fonts/liberationsans-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/liberationsans-italic-webfont.woff2') format('woff2'),
-         url('../fonts/liberationsans-italic-webfont.woff') format('woff'),
-         url('../fonts/liberationsans-italic-webfont.ttf') format('truetype'),
-         url('../fonts/liberationsans-italic-webfont.svg#liberation_sansitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'liberation_sansregular';
-    src: url('../fonts/liberationsans-regular-webfont.eot');
-    src: url('../fonts/liberationsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/liberationsans-regular-webfont.woff2') format('woff2'),
-         url('../fonts/liberationsans-regular-webfont.woff') format('woff'),
-         url('../fonts/liberationsans-regular-webfont.ttf') format('truetype'),
-         url('../fonts/liberationsans-regular-webfont.svg#liberation_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -634,6 +585,13 @@ th {
 
 /* + + + + */
 
+@-webkit-keyframes pulse_bg {
+  0% {background-color: #67FFA9;}
+  25% {background-color: #7EEDF4;}
+  75% {background-color: #3939FF;}
+  100% {background-color: #67FFA9;}
+}
+
 html, body {
   font-family: 'liberation_sansregular';
 	font-size: 20px;
@@ -641,8 +599,14 @@ html, body {
   background-color: #F8F8F8;
 }
 
+p {
+  margin: 0.9rem auto;
+}
+
 a {
   color: #222;
+  text-decoration: none;
+  border-bottom: 0.05rem solid #222;
 }
 
 ul, li {
@@ -670,11 +634,21 @@ h2:first-child {
   margin-top: 0;
 }
 
-@-webkit-keyframes pulse_bg {
-  0% {background-color: #67FFA9;}
-  25% {background-color: #7EEDF4;}
-  75% {background-color: #3939FF;}
-  100% {background-color: #67FFA9;}
+blockquote {
+  margin: 0;
+  padding: 0.9rem 0.9rem 0.9rem 1.5rem;
+  max-width: 80%;
+  /*-webkit-animation: pulse_bg 18s infinite alternate;
+  -moz-animation: pulse_bg 18s infinite alternate;
+  background-color: #67FFA9;*/
+}
+
+blockquote > p {
+  margin: 0;
+}
+
+blockquote > p+p {
+  margin: 0.9rem auto;
 }
 
 .wrapper {
@@ -736,11 +710,15 @@ h2:first-child {
   box-shadow:         3px 3px 5px 6px #222;
 }
 
-.preview h4 {
+.preview__title {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  padding: 0.3rem;
+}
+
+.preview__title h4 {
   margin: 0 auto;
 }
 
@@ -819,7 +797,7 @@ footer p {
 
 /* Essays */
 
-.index-of-contents {
+.toc {
   padding: 1.5rem 3rem;
   -webkit-animation: pulse_bg 18s infinite alternate;
   -moz-animation: pulse_bg 18s infinite alternate;
@@ -832,14 +810,38 @@ footer p {
   color: #ffffff;
 }
 
-.index-of-contents ul {
-  display: flex;
+.toc h4 {
+  margin-bottom: 0; 
 }
 
-.index-of-contents li {
+.toc a {
   position: relative;
   display: inline-block;
-  padding: 0.3rem 0.6rem 0.3rem 0;
+  padding: 0.3rem 0.6rem 0 0;
+  margin: 0 0.6rem 0.3rem 0;
+}
+
+.toc .img {
+  display: none;
+}
+
+.toc a:hover > .img {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 9rem;
+  height: 15rem;
+  background-color: #666;
+}
+
+.toc a:hover {
+  background-color: #F8F8F8;
+}
+
+.toc a:before {
+  content: "*";
+  padding-right: 0.6rem;
 }
 
 .essay__main--content {
@@ -847,9 +849,45 @@ footer p {
   margin: 3rem 3rem 6rem 3rem;
 }
 
+.essay__main--content a:hover {
+  -webkit-animation: pulse_bg 18s infinite alternate;
+  -moz-animation: pulse_bg 18s infinite alternate;
+  background-color: #67FFA9;
+}
+
+.essay__main--content h1 {
+  font-family: 'autopiabold';
+  /*text-shadow: 0.12rem 0.12rem #67FFA9, 0.12rem 0.12rem #67FFA9, 0.12rem 0.12rem #67FFA9;*/
+  -webkit-transition: all 0.12s ease-out;
+  -moz-transition: all 0.12s ease-out;
+  -o-transition: all 0.12s ease-out;
+}
+
+.essay__main--content h1:hover {
+  position: relative;
+  text-shadow: 2.2rem 2.2rem #67FFA9, 2.2rem 2.2rem #67FFA9, 2.2rem 2.2rem #67FFA9;
+  cursor: hand;
+}
+
+.essay__main--content__author {
+  margin-bottom: 3rem;
+}
+
+.essay__main--content h2 {
+  margin: 3rem 0 0 1.5rem;
+}
+
 figure.essay {
   margin: 0;
   display: inline-block;
   padding: 1.5rem 3rem;
-  border: 0.1rem solid #222;
+  border: 0.05rem solid #222;
+}
+
+.essay__main--content blockquote {
+  border: 0.05rem solid #222;
+}
+
+.essay__main--content blockquote+p {
+  margin: 0 0 1.8rem 0;
 }
