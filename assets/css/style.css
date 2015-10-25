@@ -616,7 +616,7 @@ a:hover {
 }
 
 ul, li {
-	margin: 0;
+	margin: 1.5rem 0;
 	padding: 0;
   list-style: none;
 }
@@ -624,6 +624,15 @@ ul, li {
 li:before {
   content: "*";
   padding-right: 0.6rem;
+}
+
+li p {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+li p+p {
+  text-indent: 1rem;
 }
 
 nav {
@@ -657,11 +666,7 @@ blockquote > p+p {
   margin: 0.9rem auto;
 }
 
-.wrapper {
-  
-}
-
-.shit__wrapper {
+.keep-in-place__wrapper {
   padding: 1.5rem 3rem 4.5rem 3rem;
   -webkit-animation: pulse_bg 18s infinite alternate;
   -moz-animation: pulse_bg 18s infinite alternate;
@@ -714,6 +719,11 @@ blockquote > p+p {
   box-shadow:         3px 3px 5px 6px #222;
 }
 
+
+.preview figure {
+  margin: 0;
+}
+
 .preview__title {
   position: absolute;
   top: 0;
@@ -729,15 +739,9 @@ blockquote > p+p {
 }
 
 .preview img {
-  /*position: relative;*/
   opacity: 0.75;
   vertical-align: top;
   max-width: 100%;
-}
-
-.preview figure {
-  margin: 0;
-
 }
 
 .preview:nth-child(1) {
@@ -825,8 +829,8 @@ blockquote > p+p {
 
 
 .info {
-  margin: 3rem auto;
-  padding: 1.5rem 3rem 3rem 3rem;
+  max-width: 39rem;
+  margin: 3rem 3rem 6rem 3rem;
 }
 
 footer {
