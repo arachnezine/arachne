@@ -609,6 +609,12 @@ a {
   border-bottom: 0.05rem solid #222;
 }
 
+a:hover {
+  -webkit-animation: pulse_bg 0.25s infinite alternate;
+  -moz-animation: pulse_bg 0.25s infinite alternate;
+  background-color: #F8F8F8;
+}
+
 ul, li {
 	margin: 0;
 	padding: 0;
@@ -875,10 +881,6 @@ footer p {
   background-color: #666;
 }
 
-.toc a:hover {
-  background-color: #F8F8F8;
-}
-
 .toc a:before {
   content: "*";
   padding-right: 0.6rem;
@@ -890,8 +892,8 @@ footer p {
 }
 
 .essay__main--content a:hover {
-  -webkit-animation: pulse_bg 18s infinite alternate;
-  -moz-animation: pulse_bg 18s infinite alternate;
+  -webkit-animation: pulse_bg 1s infinite alternate;
+  -moz-animation: pulse_bg 1s infinite alternate;
   background-color: #67FFA9;
 }
 
