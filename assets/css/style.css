@@ -688,23 +688,21 @@ blockquote > p+p {
 	position: absolute;
   text-align: center;
   border: 0.05rem solid #222;
+  padding: 0.3rem;
+}
+
+.preview a {
+  border-bottom: none;
+  padding: 0;
 }
 
 .preview:before {
-  content: "";
+  content: " ";
   padding-right: 0;
-  margin-top: 0.3rem; 
+  margin-top: 0; 
 }
 
-.preview .img {
-  position: relative;
-  background-color: #D8D8D8;
-  opacity: 0.8;
-  width: 100%;
-  height: 100%;
-}
-
-.preview .img:hover {
+.preview:hover {
   -moz-box-shadow:    3px 3px 5px 6px #222;
   -webkit-box-shadow: 3px 3px 5px 6px #222;
   box-shadow:         3px 3px 5px 6px #222;
@@ -716,67 +714,109 @@ blockquote > p+p {
   left: 0;
   right: 0;
   padding: 0.3rem;
+  text-align: left;
+  z-index: 3;
 }
 
 .preview__title h4 {
   margin: 0 auto;
 }
 
+.preview img {
+  /*position: relative;*/
+  opacity: 0.75;
+  vertical-align: top;
+  max-width: 100%;
+}
+
+.preview figure {
+  margin: 0;
+
+}
+
 .preview:nth-child(1) {
-  width: 240px;
-  height: 165px;
   top: 0;
   left: 0;
+  max-width: 9rem;
 }
 
 .preview:nth-child(2) {
-  width: 215px;
-  height: 170px; 
-  top: 5%;
-  left: 36%;
+  width: 9rem;
+  height: 7.5rem;
+  top: 6%;
+  left: 24%;
 }
 
 .preview:nth-child(3) {
-  width: 280px;
-  height: 120px;
-  top: 0;
-  right: 10%;
+  width: 12rem;
+  height: 6rem;
+  top: 1.5%;
+  left: 48%;
 }
 
 .preview:nth-child(4) {
-  width: 263px;
-  height: 180px;
-  top: 35%;
-  left: 10%;
+  width: 12rem;
+  height: 9rem;
+  top: 12%;
+  right: 0;
 }
 
 .preview:nth-child(5) {
-  width: 242px;
-  height: 362px;
-  bottom: 6%;
-  left: 38%;
-}
-
-.preview:nth-child(6) {
-  width: 263px;
-  height: 197px;
-  bottom: 37%;
-  right: 4%;
-}
-
-.preview:nth-child(7) {
-  width: 263px;
-  height: 191px;
-  bottom: 0;
+  width: 9rem;
+  height: 6rem;
+  top: 36%;
   left: 3%;
 }
 
+.preview:nth-child(6) {
+  width: 10rem;
+  height: 12rem;
+  bottom: 37%;
+  left: 27%;
+}
+
+.preview:nth-child(7) {
+  max-width: 9rem;
+  bottom: 42%;
+  right: 32%;
+}
+
 .preview:nth-child(8) {
-  width: 361px;
-  height: 197px;
+  width: 12rem;
+  height: 15rem;
+  bottom: 21%;
+  right: 3%;
+}
+
+.preview:nth-child(9) {
+  width: 9rem;
+  height: 15rem;
+  bottom: 4.5%;
+  left: 0;
+}
+
+.preview:nth-child(10) {
+  width: 9rem;
+  height: 12rem;
   bottom: 0;
+  left: 21%;
+}
+
+.preview:nth-child(11) {
+  width: 12rem;
+  height: 10rem;
+  bottom: 9%;
+  right: 32%;
+}
+
+.preview:nth-child(12) {
+  width: 12rem;
+  height: 6rem;
+  bottom: 1.5%;
   right: 0;
 }
+
+
 
 .info {
   margin: 3rem auto;
