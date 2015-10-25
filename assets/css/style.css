@@ -618,21 +618,15 @@ a:hover {
 ul, li {
 	margin: 1.5rem 0;
 	padding: 0;
-  list-style: none;
-}
-
-li:before {
-  content: "*";
-  padding-right: 0.6rem;
+  list-style: circle;
 }
 
 li p {
-  display: inline-block;
   margin: 0 auto;
 }
 
 li p+p {
-  text-indent: 1rem;
+  text-indent: 1.5rem;
 }
 
 nav {
@@ -718,7 +712,6 @@ blockquote > p+p {
   -webkit-box-shadow: 3px 3px 5px 6px #222;
   box-shadow:         3px 3px 5px 6px #222;
 }
-
 
 .preview figure {
   margin: 0;
@@ -826,8 +819,6 @@ blockquote > p+p {
   right: 0;
 }
 
-
-
 .info {
   max-width: 39rem;
   margin: 3rem 3rem 6rem 3rem;
@@ -864,6 +855,15 @@ footer p {
   margin-bottom: 0; 
 }
 
+.toc ul {
+  margin: 0;
+}
+
+.toc li {
+  display: inline-block;
+  margin: 0;
+}
+
 .toc a {
   position: relative;
   display: inline-block;
@@ -883,11 +883,6 @@ footer p {
   width: 9rem;
   height: 15rem;
   background-color: #666;
-}
-
-.toc a:before {
-  content: "*";
-  padding-right: 0.6rem;
 }
 
 .essay__main--content {
