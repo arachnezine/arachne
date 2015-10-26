@@ -586,10 +586,23 @@ th {
 /* + + + + */
 
 @-webkit-keyframes pulse_bg {
-  0% {background-color: #67FFA9;}
-  25% {background-color: #7EEDF4;}
-  75% {background-color: #3939FF;}
-  100% {background-color: #67FFA9;}
+  0% {background-color: #CCDBFC;}
+  10% {background-color: #4343F3;}
+  25% {background-color: #1111FF;}
+  45% {background-color: #CF61DC;}
+  70% {background-color: #F6F162;}
+  85% {background-color: #70F589;}
+  100% {background-color: #04AD7B;}
+}
+
+@-webkit-keyframes pulse_bd {
+  0% {border-color: #CCDBFC;}
+  10% {border-color: #4343F3;}
+  25% {border-color: #1111FF;}
+  45% {border-color: #CF61DC;}
+  70% {border-color: #F6F162;}
+  85% {border-color: #70F589;}
+  100% {border-color: #04AD7B;}
 }
 
 html, body {
@@ -645,11 +658,11 @@ h2:first-child {
 
 blockquote {
   margin: 0;
-  padding: 0.9rem 0.9rem 0.9rem 1.5rem;
+  padding: 0.9rem 1.5rem;
   max-width: 80%;
-  /*-webkit-animation: pulse_bg 18s infinite alternate;
-  -moz-animation: pulse_bg 18s infinite alternate;
-  background-color: #67FFA9;*/
+  border: 0.05rem solid #04AD7B;
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
 }
 
 blockquote > p {
@@ -848,7 +861,7 @@ nav {
 
 nav a {
   display: inline-block;
-  margin-right: 1.5rem;
+  float: right;
 }
 
 .title__menu {
@@ -890,10 +903,12 @@ nav a {
 }
 
 figure.essay {
-  margin: 0;
   display: inline-block;
-  padding: 1.5rem 3rem;
-  border: 0.05rem solid #222;
+  margin: 0;
+  padding: 0.9rem 1.5rem;
+  border: 0.05rem solid #04AD7B;
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
 }
 
 .essay__main--content blockquote {
@@ -906,5 +921,5 @@ figure.essay {
 
 .nav__index {
   display: inline-block;
-  margin: 3rem 0 0 0; 
+  margin: 3rem 0 0 0;
 }
