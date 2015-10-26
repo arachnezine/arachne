@@ -628,6 +628,10 @@ a:hover {
   background-color: #F8F8F8;
 }
 
+img {
+  width: 100%;
+}
+
 ul, li {
 	margin: 1.5rem 0;
 	padding: 0;
@@ -650,6 +654,10 @@ li p+p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'liberation_sansbold';
+}
+
+h1 {
+  line-height: 1.25;
 }
 
 h2:first-child {
@@ -702,31 +710,32 @@ blockquote > p+p {
   color: #ffffff;
 }
 
-.preview {
+.preview__element {
 	position: absolute;
   text-align: center;
   border: 0.05rem solid #222;
   padding: 0.3rem;
+  list-style: none;
 }
 
-.preview a {
+.preview__element a {
   border-bottom: none;
   padding: 0;
 }
 
-.preview:before {
+.preview__element:before {
   content: " ";
   padding-right: 0;
   margin-top: 0; 
 }
 
-.preview:hover {
+.preview__element:hover {
   -moz-box-shadow:    3px 3px 5px 6px #222;
   -webkit-box-shadow: 3px 3px 5px 6px #222;
   box-shadow:         3px 3px 5px 6px #222;
 }
 
-.preview figure {
+.preview__element figure {
   margin: 0;
 }
 
@@ -744,88 +753,88 @@ blockquote > p+p {
   margin: 0 auto;
 }
 
-.preview img {
+.preview__element img {
   opacity: 0.75;
   vertical-align: top;
   max-width: 100%;
 }
 
-.preview:nth-child(1) {
+.preview__element:nth-child(1) {
   top: 0;
   left: 0;
   max-width: 9rem;
 }
 
-.preview:nth-child(2) {
+.preview__element:nth-child(2) {
   width: 9rem;
   height: 7.5rem;
   top: 6%;
   left: 24%;
 }
 
-.preview:nth-child(3) {
+.preview__element:nth-child(3) {
   width: 12rem;
   height: 6rem;
   top: 1.5%;
   left: 48%;
 }
 
-.preview:nth-child(4) {
+.preview__element:nth-child(4) {
   width: 12rem;
   height: 9rem;
   top: 12%;
   right: 0;
 }
 
-.preview:nth-child(5) {
+.preview__element:nth-child(5) {
   width: 9rem;
   height: 6rem;
   top: 36%;
   left: 3%;
 }
 
-.preview:nth-child(6) {
+.preview__element:nth-child(6) {
   width: 10rem;
   height: 12rem;
   bottom: 37%;
   left: 27%;
 }
 
-.preview:nth-child(7) {
+.preview__element:nth-child(7) {
   max-width: 9rem;
   bottom: 42%;
   right: 32%;
 }
 
-.preview:nth-child(8) {
+.preview__element:nth-child(8) {
   width: 12rem;
   height: 15rem;
   bottom: 21%;
   right: 3%;
 }
 
-.preview:nth-child(9) {
+.preview__element:nth-child(9) {
   width: 9rem;
   height: 15rem;
   bottom: 4.5%;
   left: 0;
 }
 
-.preview:nth-child(10) {
+.preview__element:nth-child(10) {
   width: 9rem;
   height: 12rem;
   bottom: 0;
   left: 21%;
 }
 
-.preview:nth-child(11) {
+.preview__element:nth-child(11) {
   width: 12rem;
   height: 10rem;
   bottom: 9%;
   right: 32%;
 }
 
-.preview:nth-child(12) {
+.preview__element:nth-child(12) {
   width: 12rem;
   height: 6rem;
   bottom: 1.5%;
@@ -847,6 +856,11 @@ footer {
 
 footer p {
   width: 47%;
+}
+
+footer img {
+  display: block;
+  margin: 0.3rem 0 0 0;
 }
 
 /* Essays */
