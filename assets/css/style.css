@@ -629,7 +629,7 @@ li p+p {
   text-indent: 1.5rem;
 }
 
-nav {
+.nav__info {
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
@@ -819,14 +819,14 @@ blockquote > p+p {
   right: 0;
 }
 
-.info {
+#info {
   max-width: 39rem;
   margin: 3rem 3rem 6rem 3rem;
 }
 
 footer {
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 1.5rem 3rem;
   border-top: 0.05rem solid #222;
   display: flex;
   justify-content: space-between;
@@ -838,7 +838,7 @@ footer p {
 
 /* Essays */
 
-.toc {
+nav {
   padding: 1.5rem 3rem;
   -webkit-animation: pulse_bg 18s infinite alternate;
   -moz-animation: pulse_bg 18s infinite alternate;
@@ -846,43 +846,16 @@ footer p {
   border-bottom: 0.05rem solid #222;
 }
 
+nav a {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
 .title__menu {
   font-family: "autopiabold";
   color: #ffffff;
-}
-
-.toc h4 {
-  margin-bottom: 0; 
-}
-
-.toc ul {
   margin: 0;
-}
-
-.toc li {
   display: inline-block;
-  margin: 0;
-}
-
-.toc a {
-  position: relative;
-  display: inline-block;
-  padding: 0.3rem 0.6rem 0 0;
-  margin: 0 0.6rem 0.3rem 0;
-}
-
-.toc .img {
-  display: none;
-}
-
-.toc a:hover > .img {
-  display: block;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 9rem;
-  height: 15rem;
-  background-color: #666;
 }
 
 .essay__main--content {
@@ -891,8 +864,6 @@ footer p {
 }
 
 .essay__main--content a:hover {
-  -webkit-animation: pulse_bg 1s infinite alternate;
-  -moz-animation: pulse_bg 1s infinite alternate;
   background-color: #67FFA9;
 }
 
@@ -931,4 +902,9 @@ figure.essay {
 
 .essay__main--content blockquote+p {
   margin: 0 0 1.8rem 0;
+}
+
+.nav__index {
+  display: inline-block;
+  margin: 3rem 0 0 0; 
 }
