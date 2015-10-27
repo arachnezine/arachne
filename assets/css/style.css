@@ -894,6 +894,29 @@ blockquote > p+p {
   }
 }
 
+.donate {
+  margin: 3rem 0;
+  padding: 0.9rem;
+  text-align: center;
+  border: 0.05rem solid #04AD7B;
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
+}
+
+@media scren and (min-width: 540px) {
+  .donate {
+    padding: 0.9rem 1.5rem;
+  }
+}
+
+.flattr {
+  display: inline-block;
+  border-bottom: none;
+  padding: 0.15rem;
+}
+
 footer {
   margin: 0 auto;
   padding:  1.5rem;
