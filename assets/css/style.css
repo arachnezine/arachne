@@ -577,6 +577,8 @@ a {
 a:hover {
   -webkit-animation: pulse_bg 0.25s infinite alternate;
   -moz-animation: pulse_bg 0.25s infinite alternate;
+  -o-transition: pulse_bg 0.25s infinite alternate;
+  transition: pulse_bg 0.25s infinite alternate;
   background-color: #F8F8F8;
 }
 
@@ -623,6 +625,8 @@ blockquote {
   border: 0.05rem solid #04AD7B;
   -webkit-animation: pulse_bd 3s infinite alternate;
   -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
 }
 
 blockquote > p {
@@ -637,6 +641,8 @@ blockquote > p+p {
   padding: 1.5rem 3rem 4.5rem 3rem;
   -webkit-animation: pulse_bg 18s infinite alternate;
   -moz-animation: pulse_bg 18s infinite alternate;
+  -o-transition: pulse_bg 18s infinite alternate;
+  transition: pulse_bg 18s infinite alternate;
   background-color: #67FFA9;
 }
 
@@ -833,6 +839,8 @@ nav {
   padding: 1.5rem 3rem;
   -webkit-animation: pulse_bg 18s infinite alternate;
   -moz-animation: pulse_bg 18s infinite alternate;
+  -o-transition: pulse_bg 18s infinite alternate;
+  transition: pulse_bg 18s infinite alternate;
   background-color: #67FFA9;
   border-bottom: 0.05rem solid #222;
 }
@@ -846,7 +854,13 @@ nav {
 
 .essay__main--content {
   max-width: 39rem;
-  margin: 3rem 3rem 6rem 3rem;
+  margin: 1.5rem 1.5rem 3rem 1.5rem;
+}
+
+@media and screen (min-width: 500px) {
+  .essay__main--content {
+    margin: 3rem 3rem 6rem 3rem;
+  }
 }
 
 .essay__main--content a:hover {
@@ -855,16 +869,6 @@ nav {
 
 .essay__main--content h1 {
   font-family: 'autopiabold';
-  /*text-shadow: 0.12rem 0.12rem #67FFA9, 0.12rem 0.12rem #67FFA9, 0.12rem 0.12rem #67FFA9;*/
-  -webkit-transition: all 0.12s ease-out;
-  -moz-transition: all 0.12s ease-out;
-  -o-transition: all 0.12s ease-out;
-}
-
-.essay__main--content h1:hover {
-  position: relative;
-  text-shadow: 2.2rem 2.2rem #67FFA9, 2.2rem 2.2rem #67FFA9, 2.2rem 2.2rem #67FFA9;
-  cursor: hand;
 }
 
 .essay__main--content__author {
@@ -876,8 +880,7 @@ nav {
 }
 
 .essay__main--content p {
-  /*text-shadow: 0.05rem 0.05rem 0.05rem #F6F162;*/
-  text-shadow: 1px 1px #FFFF00, 0px 0px #000000, 1px 1px #FFFFFF;
+  /*text-shadow: 1px 1px #FFFF00, 0px 0px #000000, 1px 1px #FFFFFF;*/
 }
 
 figure.essay {
@@ -887,6 +890,8 @@ figure.essay {
   border: 0.05rem solid #04AD7B;
   -webkit-animation: pulse_bd 3s infinite alternate;
   -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
 }
 
 .essay__main--content blockquote {
