@@ -245,7 +245,7 @@ h1 {
   margin: 0.6em 0;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   h1 {
     font-size: 2em;
     margin: 0.9rem 0;
@@ -258,7 +258,7 @@ h2 {
   margin: 0.9rem 0;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   h2 {
     font-size: 1.5em;
     margin: 0.9rem 0;
@@ -271,7 +271,7 @@ h3 {
   margin: 0.75rem auto;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   h3 {
     font-size: 1.17em;
     margin: 1rem auto;
@@ -618,7 +618,7 @@ a:hover {
   background-color: #F8F8F8;
 }
 
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 599px) {
   p, a {
     font-size: 85%;
   }
@@ -652,7 +652,7 @@ li p+p {
   right: 0.9rem;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   .nav__info {
     right: 1.2rem;
   }
@@ -677,7 +677,7 @@ blockquote {
   transition: pulse_bd 3s infinite alternate;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   blockquote {
     padding: 0.9rem 1.5rem;
   }
@@ -700,7 +700,7 @@ blockquote > p+p {
   background-color: #67FFA9;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   .keep-in-place__wrapper {
     padding: 1.5rem 3rem 4.5rem 3rem;
   }
@@ -734,7 +734,7 @@ blockquote > p+p {
   }
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   .title__bg h1 {
     font-size: 6rem;
   }
@@ -888,7 +888,7 @@ blockquote > p+p {
   margin: 1.5rem 1.5rem 3rem 1.5rem;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   #info {
     margin: 3rem 3rem 6rem 3rem;
   }
@@ -905,7 +905,7 @@ blockquote > p+p {
   transition: pulse_bd 3s infinite alternate;
 }
 
-@media scren and (min-width: 540px) {
+@media scren and (min-width: 600px) {
   .donate {
     padding: 0.9rem 1.5rem;
   }
@@ -925,7 +925,7 @@ footer {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   footer {
     padding: 1.5rem 3rem;
   }
@@ -964,7 +964,7 @@ nav {
   border-bottom: 0.05rem solid #222;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   nav {
     padding: 1.5rem 3rem;
   }
@@ -982,7 +982,7 @@ nav {
   margin: 1.5rem 1.5rem 3rem 1.5rem;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   .essay__main--content {
     margin: 3rem 3rem 6rem 3rem;
   }
@@ -1000,7 +1000,7 @@ nav {
   margin-bottom: 2.4rem;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   .essay__main--content__author {
     margin-bottom: 3rem;
   }
@@ -1010,7 +1010,7 @@ nav {
   margin: 2.4rem 0 0 1rem;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   .essay__main--content h2 {
     margin: 3rem 0 0 1.5rem;
   }
@@ -1031,7 +1031,7 @@ figure.essay {
   transition: pulse_bd 3s infinite alternate;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   figure.essay {
     padding: 0.9rem 1.5rem;
   }
