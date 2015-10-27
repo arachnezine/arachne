@@ -240,8 +240,42 @@ dfn, em {
  */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 1.7em;
+  line-height: 1.25;
+  margin: 0.6em 0;
+}
+
+@media screen and (min-width: 500px) {
+  h1 {
+    font-size: 2em;
+    margin: 0.9rem 0;
+  }
+}
+
+h2 {
+  font-size: 1.25em;
+  line-height: 1.25;
+  margin: 0.9rem 0;
+}
+
+@media screen and (min-width: 500px) {
+  h2 {
+    font-size: 1.5em;
+    margin: 0.9rem 0;
+  }
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 1.45;
+  margin: 0.75rem auto;
+}
+
+@media screen and (min-width: 500px) {
+  h3 {
+    font-size: 1.17em;
+    margin: 1rem auto;
+  }
 }
 
 /**
@@ -569,13 +603,8 @@ p {
   margin: 0.9rem auto;
 }
 
-@media screen and (max-width: 500px) {
-  p {
-    font-size: 85%;
-  }
-}
-
 a {
+  font-size: 1rem;
   color: #222;
   text-decoration: none;
   border-bottom: 0.05rem solid #222;
@@ -587,6 +616,16 @@ a:hover {
   -o-transition: pulse_bg 0.25s infinite alternate;
   transition: pulse_bg 0.25s infinite alternate;
   background-color: #F8F8F8;
+}
+
+@media screen and (max-width: 500px) {
+  p, a {
+    font-size: 85%;
+  }
+
+  p > a {
+    font-size: 100%;
+  }
 }
 
 img {
@@ -617,23 +656,25 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'liberation_sansbold';
 }
 
-h1 {
-  line-height: 1.25;
-}
-
 h2:first-child {
   margin-top: 0;
 }
 
 blockquote {
   margin: 0;
-  padding: 0.9rem 1.5rem;
+  padding: 0.6rem 0.9rem;
   max-width: 80%;
   border: 0.05rem solid #04AD7B;
   -webkit-animation: pulse_bd 3s infinite alternate;
   -moz-animation: pulse_bd 3s infinite alternate;
   -o-transition: pulse_bd 3s infinite alternate;
   transition: pulse_bd 3s infinite alternate;
+}
+
+@media screen and (min-width: 500px) {
+  blockquote {
+    padding: 0.9rem 1.5rem;
+  }
 }
 
 blockquote > p {
@@ -813,10 +854,16 @@ blockquote > p+p {
 
 footer {
   margin: 0 auto;
-  padding: 1.5rem 3rem;
+  padding:  0.9rem;
   border-top: 0.05rem solid #222;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 500px) {
+  footer {
+    padding: 1.5rem 3rem;
+  }
 }
 
 footer p {
@@ -885,11 +932,23 @@ nav {
 }
 
 .essay__main--content__author {
-  margin-bottom: 3rem;
+  margin-bottom: 2.4rem;
+}
+
+@media screen and (min-width: 500px) {
+  .essay__main--content__author {
+    margin-bottom: 3rem;
+  }
 }
 
 .essay__main--content h2 {
-  margin: 3rem 0 0 1.5rem;
+  margin: 2.4rem 0 0 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .essay__main--content h2 {
+    margin: 3rem 0 0 1.5rem;
+  }
 }
 
 .essay__main--content p {
@@ -899,12 +958,18 @@ nav {
 figure.essay {
   display: inline-block;
   margin: 0;
-  padding: 0.9rem 1.5rem;
+  padding: 0.6rem 0.9rem;
   border: 0.05rem solid #04AD7B;
   -webkit-animation: pulse_bd 3s infinite alternate;
   -moz-animation: pulse_bd 3s infinite alternate;
   -o-transition: pulse_bd 3s infinite alternate;
   transition: pulse_bd 3s infinite alternate;
+}
+
+@media screen and (min-width: 500px) {
+  figure.essay {
+    padding: 0.9rem 1.5rem;
+  }
 }
 
 .essay__main--content blockquote {
