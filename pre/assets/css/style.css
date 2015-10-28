@@ -648,6 +648,18 @@ a {
   color: #222;
   text-decoration: none;
   border-bottom: 0.05rem solid #222;
+
+  /* Warning: Needed for oldIE support, but words are broken up letter-by-letter */
+ -ms-word-break: break-all;
+     word-break: break-all;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+        hyphens: auto;
 }
 
 a:hover {
@@ -673,9 +685,15 @@ img {
 }
 
 ul, li {
-	margin: 1.5rem 0;
+	margin: 0.75rem 0;
 	padding: 0;
   list-style: circle;
+}
+
+@media screen and (min-width: 520px) {
+  ul, li {
+    margin: 1.5rem 0;
+  }
 }
 
 li p {
@@ -686,49 +704,8 @@ li p+p {
   text-indent: 1.5rem;
 }
 
-.nav__info {
-  position: fixed;
-  top: 1.5rem;
-  right: 0.9rem;
-}
-
-@media screen and (min-width: 600px) {
-  .nav__info {
-    right: 1.2rem;
-  }
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'liberation_sansbold';
-}
-
-h2:first-child {
-  margin-top: 0;
-}
-
-blockquote {
-  margin: 0;
-  padding: 0.6rem 0.9rem;
-  max-width: 80%;
-  border: 0.05rem solid #04AD7B;
-  -webkit-animation: pulse_bd 3s infinite alternate;
-  -moz-animation: pulse_bd 3s infinite alternate;
-  -o-transition: pulse_bd 3s infinite alternate;
-  transition: pulse_bd 3s infinite alternate;
-}
-
-@media screen and (min-width: 600px) {
-  blockquote {
-    padding: 0.9rem 1.5rem;
-  }
-}
-
-blockquote > p {
-  margin: 0;
-}
-
-blockquote > p+p {
-  margin: 0.9rem auto;
 }
 
 .pre--preview__wrapper {
@@ -765,9 +742,15 @@ blockquote > p+p {
   color: #F8F8F8;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 480px) {
   .title__bg h1 {
-    font-size: 4.5rem;
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .title__bg h1 {
+    font-size: 5.2rem;
   }
 }
 
@@ -785,14 +768,28 @@ blockquote > p+p {
 
 @media screen and (min-width: 800px) {
   .title__bg h1 {
+    font-size: 8.5rem;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .title__bg h1 {
     font-size: 9rem;
   }
 }
 
 .subtitle__bg {
-  width: 24rem;
-  height: 45%;
+  width: auto;
+  height: 25%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 520px) {
+  .subtitle__bg {
+    width: 24rem;
+    height: 45%;
+    margin: 0 auto;
+  }
 }
 
 .subtitle__bg h2 {
@@ -804,13 +801,26 @@ blockquote > p+p {
 #contributors {
   max-width: 39rem;
   position: relative;
-  margin: 3rem 1.5rem;
-  padding: 0 2.1rem 0.9rem 0;
+  margin: 3rem 0.9rem;
+  padding: 0 1.2rem 0.9rem 0;
   background-color: #F6F162;
 }
 
+@media screen and (min-width: 520px) {
+  #contributors {
+    margin: 3rem 1.5rem;
+    padding: 0 2.1rem 0.9rem 0;
+  }
+}
+
 .contributors__wrapper {
-  padding: 21% 0 0 3rem;
+  padding: 42% 0 0 0.9rem;
+}
+
+@media screen and (min-width: 520px) {
+  .contributors__wrapper {
+    padding: 21% 0 0 3rem;
+  }
 }
 
 .contributors__wrapper ul {
@@ -844,7 +854,7 @@ blockquote > p+p {
 
 figure.about__picture {
   position: absolute;
-  top: -25%;
+  top: -7.5%;
   display: inline-block;
   margin: 0;
   padding: 0.6rem 0.9rem;
@@ -856,41 +866,39 @@ figure.about__picture {
 }
 
 @media screen and (min-width: 600px) {
-  figure.essay {
+  figure.about__picture {
+    top: -25%;
     padding: 0.9rem 1.5rem;
   }
 }
 
-.about__main--text {
-  
-}
-
 #info__bottom {
-  max-width: 40.5rem;
+  width: 100%;
   position: relative;
-  margin: 1.5rem 0 3rem 0;
-  padding: 0 0 0 1.5rem;
+  margin: 1.5rem 0 0.9rem 0;
+  padding: 0;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  flex-direction: column;
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-
   background-color: #70F589;
 }
 
 .about__main--text__footnotes {
-  width: 70%;
-  margin: 0 0 0 3rem;
+  width: auto;
+  margin: 0 0 0 1.5rem;
+  padding: 0 0.5rem;
 }
 
 footer {
-  width: 30%;
-  margin: 0;
+  width: auto;
+  margin: 0.9rem 0.9rem 0 0.9rem;
   padding: 0.6rem;
   -webkit-align-self: flex-start;
   align-self: flex-end;
@@ -899,4 +907,23 @@ footer {
   -moz-animation: pulse_bd 3s infinite alternate;
   -o-transition: pulse_bd 3s infinite alternate;
   transition: pulse_bd 3s infinite alternate;
+}
+
+@media screen and (min-width: 520px) {
+  #info__bottom {
+    flex-direction: row;
+    max-width: 40.5rem;
+    margin: 1.5rem 0 3rem 0;
+    padding: 0 0 0 1.5rem;
+  }
+
+  .about__main--text__footnotes {
+    width: 70%;
+    margin: 0 0 0 3rem;
+  }
+
+  footer {
+    width: 30%;
+    margin: 0;
+  }
 }
