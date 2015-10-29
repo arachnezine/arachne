@@ -790,7 +790,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 520px) {
   #contributors {
     margin: 3rem 1.5rem;
-    padding: 0 2.1rem 0.9rem 0;
+    padding: 0 2.1rem 2.1rem 0;
   }
 }
 
@@ -837,7 +837,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .glow {
-  color: #444;
+  font-size: 1.75rem;
+  color: #F8F8F8;
   text-shadow: 
     1px 0px 1px #ccc, 0px 1px 1px #eee, 
     2px 1px 1px #ccc, 1px 2px 1px #eee,
