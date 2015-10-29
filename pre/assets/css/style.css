@@ -881,7 +881,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contributors__wrapper li a:hover {
-  color: currentColor;
+  color: #1111FF;
   -webkit-animation: pulse_co 0.25s infinite alternate;
   -moz-animation: pulse_co 0.25s infinite alternate;
   -o-transition: pulse_co 0.25s infinite alternate;
