@@ -648,18 +648,6 @@ a {
   color: #222;
   text-decoration: none;
   border-bottom: 0.05rem solid #222;
-
-  /* Warning: Needed for oldIE support, but words are broken up letter-by-letter */
- -ms-word-break: break-all;
-     word-break: break-all;
-
-     /* Non standard for webkit */
-     word-break: break-word;
-
--webkit-hyphens: auto;
-   -moz-hyphens: auto;
-    -ms-hyphens: auto;
-        hyphens: auto;
 }
 
 a:hover {
@@ -737,7 +725,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title__bg h1 {
   font-family: "autopiabold";
-  font-size: 3.2rem;
+  font-size: 2.7rem;
   line-height: 1;
   color: #F8F8F8;
 }
@@ -748,15 +736,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media screen and (min-width: 540px) {
-  .title__bg h1 {
-    font-size: 5.2rem;
-  }
-}
-
 @media screen and (min-width: 600px) {
   .title__bg h1 {
-    font-size: 6rem;
+    font-size: 5.7rem;
   }
 }
 
@@ -819,7 +801,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 520px) {
   .contributors__wrapper {
-    padding: 21% 0 0 3rem;
+    padding: 42% 0 0 3rem;
   }
 }
 
@@ -830,12 +812,24 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-   -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
+}
+
+.contributors__wrapper li {
+  flex: 1 100%;
+  padding: 0 3rem 0 0;
+}
+
+@media screen and (min-width: 520px) {
+  .contributors__wrapper li {
+    flex: 1 auto;
+    padding: 0 3rem 0 0;
+  }
 }
 
 /* Info */
@@ -854,7 +848,7 @@ h1, h2, h3, h4, h5, h6 {
 
 figure.about__picture {
   position: absolute;
-  top: -7.5%;
+  top: -15%;
   display: inline-block;
   margin: 0;
   padding: 0.6rem 0.9rem;
@@ -865,6 +859,13 @@ figure.about__picture {
   transition: pulse_bd 3s infinite alternate;
 }
 
+@media screen and (min-width: 480px) {
+  figure.about__picture {
+    top: -18%;
+    padding: 0.9rem 1.5rem;
+  }
+}
+
 @media screen and (min-width: 600px) {
   figure.about__picture {
     top: -25%;
@@ -873,7 +874,7 @@ figure.about__picture {
 }
 
 #info__bottom {
-  width: 100%;
+  /*width: 100%;*/
   position: relative;
   margin: 1.5rem 0 0.9rem 0;
   padding: 0;
@@ -887,6 +888,7 @@ figure.about__picture {
   -moz-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
+  align-items: baseline;
   background-color: #70F589;
 }
 
@@ -898,10 +900,9 @@ figure.about__picture {
 
 footer {
   width: auto;
-  margin: 0.9rem 0.9rem 0 0.9rem;
-  padding: 0.6rem;
+  margin: 0.9rem;
+  padding: 0.55rem;
   -webkit-align-self: flex-start;
-  align-self: flex-end;
   border: 0.05rem solid #04AD7B;
   -webkit-animation: pulse_bd 3s infinite alternate;
   -moz-animation: pulse_bd 3s infinite alternate;
@@ -919,11 +920,12 @@ footer {
 
   .about__main--text__footnotes {
     width: 70%;
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 1rem;
   }
 
   footer {
     width: 30%;
     margin: 0;
+    align-self: flex-end;
   }
 }
