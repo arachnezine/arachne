@@ -833,7 +833,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contributors__wrapper {
-  padding: 42% 0 0 0.9rem;
+  padding: 45% 0 0 0.9rem;
 }
 
 @media screen and (min-width: 520px) {
@@ -924,7 +924,7 @@ h1, h2, h3, h4, h5, h6 {
 
 figure.about__picture {
   position: absolute;
-  top: -15%;
+  top: -6.5%;
   display: inline-block;
   margin: 0;
   padding: 0.6rem 0.9rem;
@@ -935,30 +935,23 @@ figure.about__picture {
   transition: pulse_bd 3s infinite alternate;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 370px) {
   figure.about__picture {
-    top: -18%;
+    top: -9%;
     padding: 0.9rem 1.5rem;
   }
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 420px) {
   figure.about__picture {
-    top: -15%;
-    padding: 0.9rem 1.5rem;
-  }
-}
-
-@media screen and (min-width: 720px) {
-  figure.about__picture {
-    /*top: -18%;*/
+    top: -12%;
     padding: 0.9rem 1.5rem;
   }
 }
 
 #info__bottom {
   position: relative;
-  margin: 1.5rem 0 0.9rem 0;
+  margin: 1.5rem 0;
   padding: 0;
   display: -webkit-box;
   display: -moz-box;
