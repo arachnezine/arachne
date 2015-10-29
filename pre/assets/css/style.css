@@ -892,13 +892,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.75rem;
   color: #F8F8F8;
   text-shadow: 
-    1px 0px 1px #ccc, 0px 1px 1px #eee, 
-    2px 1px 1px #ccc, 1px 2px 1px #eee,
-    3px 2px 1px #ccc, 2px 3px 1px #eee,
-    4px 3px 1px #ccc, 3px 4px 1px #eee,
-    5px 4px 1px #ccc, 4px 5px 1px #eee,
-    6px 5px 1px #ccc, 5px 6px 1px #eee,
-    7px 6px 1px #ccc;
+    1px 0px 1px #BBBABA, 0px 1px 1px #222, 
+    2px 1px 1px #BBBABA, 1px 2px 1px #222,
+    3px 2px 1px #BBBABA, 2px 3px 1px #222,
+    4px 3px 1px #BBBABA, 3px 4px 1px #222,
+    5px 4px 1px #BBBABA, 4px 5px 1px #222,
+    6px 5px 1px #BBBABA;
 }
 
 @media screen and (min-width: 520px) {
