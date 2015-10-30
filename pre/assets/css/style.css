@@ -692,10 +692,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .pre--preview__wrapper {
   padding: 1.5rem 1.5rem 4.5rem 1.5rem;
-  -webkit-animation: pulse_bg 15s infinite alternate;
-  -moz-animation: pulse_bg 15s infinite alternate;
-  -o-transition: pulse_bg 15s infinite alternate;
-  transition: pulse_bg 15s infinite alternate;
+  -webkit-animation: pulse_bg 18s infinite alternate;
+  -moz-animation: pulse_bg 18s infinite alternate;
+  -o-transition: pulse_bg 18s infinite alternate;
+  transition: pulse_bg 18s infinite alternate;
   background-color: #67FFA9;
 }
 
