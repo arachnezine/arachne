@@ -706,6 +706,10 @@ h2:first-child {
   margin-top: 0;
 }
 
+h4 {
+  line-height: 1.25;
+}
+
 blockquote {
   margin: 0;
   padding: 0.6rem 0.9rem;
@@ -842,42 +846,37 @@ blockquote > p+p {
 }
 
 .preview__element:nth-child(1) {
+  max-width: 9rem;
   top: 0;
   left: 0;
-  max-width: 9rem;
 }
 
 .preview__element:nth-child(2) {
-  width: 9rem;
-  height: 7.5rem;
+  max-width: 9rem;
   top: 6%;
   left: 24%;
 }
 
 .preview__element:nth-child(3) {
-  width: 12rem;
-  height: 6rem;
+  max-width: 12rem;
   top: 1.5%;
   left: 48%;
 }
 
 .preview__element:nth-child(4) {
-  width: 12rem;
-  height: 9rem;
+  max-width: 12rem;
   top: 12%;
   right: 0;
 }
 
 .preview__element:nth-child(5) {
-  width: 9rem;
-  height: 6rem;
+  max-width: 9rem;
   top: 36%;
   left: 3%;
 }
 
 .preview__element:nth-child(6) {
-  width: 10rem;
-  height: 12rem;
+  max-width: 7.5rem;
   bottom: 37%;
   left: 27%;
 }
@@ -890,14 +889,12 @@ blockquote > p+p {
 
 .preview__element:nth-child(8) {
   width: 12rem;
-  height: 15rem;
   bottom: 21%;
   right: 3%;
 }
 
 .preview__element:nth-child(9) {
   width: 9rem;
-  height: 15rem;
   bottom: 4.5%;
   left: 0;
 }
