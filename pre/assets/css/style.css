@@ -535,6 +535,17 @@ th {
 
 /* + + + + */
 
+*, *:before, *:after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box; 
+
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+}
+
 @-webkit-keyframes pulse_bg {
   0% {background-color: #CCDBFC;}
   10% {background-color: #4343F3;}
@@ -630,6 +641,8 @@ html, body {
 	font-size: 20px;
 	line-height: 1.5;
   background-color: #F8F8F8;
+  /*height: 100%;
+  min-height: 100%;*/
 }
 
 p {
@@ -691,25 +704,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pre--preview__wrapper {
+  position: relative;
+  margin: 0 auto;
   padding: 1.5rem 1.5rem 4.5rem 1.5rem;
   -webkit-animation: pulse_bg 18s infinite alternate;
   -moz-animation: pulse_bg 18s infinite alternate;
   -o-transition: pulse_bg 18s infinite alternate;
   transition: pulse_bg 18s infinite alternate;
   background-color: #67FFA9;
-}
-
-@media screen and (min-width: 600px) {
-  .keep-in-place__wrapper {
-    padding: 1.5rem 3rem 4.5rem 3rem;
-  }
-}
-
-.preview__wrapper {
-	width: 100%;
-	height: 90vh;
-	position: relative;
-  margin: 0 auto;
 }
 
 .pre--preview__wrapper h1, .pre--preview__wrapper h2 {
@@ -724,6 +726,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "autopiabold";
   font-size: 2.7rem;
   line-height: 1;
+  margin: 0;
 }
 
 @media screen and (min-width: 480px) {
@@ -758,24 +761,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .subtitle__bg {
   width: auto;
-  height: 25%;
+  height: 25vh;
   margin: 0 auto;
   text-align: center;
 }
 
 @media screen and (min-width: 520px) {
   .subtitle__bg {
-    width: 24rem;
-    height: 32%;
+    width: 27rem;
+    height: 32vh;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 620px) {
   .subtitle__bg {
-    width: 24rem;
-    height: 30%;
-    margin: 0 auto;
+    height: 30vh;
   }
 }
 
@@ -802,13 +803,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 520px) {
   .contributors__wrapper {
-    padding: 32% 0 0 3rem;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .contributors__wrapper {
-    padding: 39% 0 0 3rem;
+    padding: 48% 0 0 3rem;
   }
 }
 
@@ -881,7 +876,17 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 600px) {
   #info {
-    margin: 3rem 3rem 6rem 3rem;
+    margin: 3rem 1.5rem 6rem 1.5rem;
+  }
+}
+
+.about__main--text h2 {
+  margin: 2.4rem 0 0 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .about__main--text h2 {
+    margin: 3rem 0 0 1.5rem;
   }
 }
 
