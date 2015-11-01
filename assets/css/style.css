@@ -745,11 +745,11 @@ blockquote > p+p {
 
 .title__bg h1 {
   font-family: "autopiabold";
-  font-size: 3.2rem;
+  font-size: 3rem;
   color: #ffffff;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 480px) {
   .title__bg h1 {
     font-size: 4.5rem;
   }
@@ -927,10 +927,6 @@ blockquote > p+p {
     max-width: 6rem;
   }
 
-  .preview__title h4 {
-    font-size: 80%;
-  }
-
   .preview__element:nth-child(1) {
     top: 0;
     left: 0;
@@ -1006,8 +1002,9 @@ blockquote > p+p {
     max-width: 7.5rem;
   }
 
+
   .preview__title h4 {
-    font-size: 80%;
+    font-size: 100%;
   }
 
   .preview__element:nth-child(1) {
@@ -1027,8 +1024,8 @@ blockquote > p+p {
   }
 
   .preview__element:nth-child(4) {
-    height: auto;
-    top: 30%;
+    height: 8.7rem;
+    top: 24%;
     right: 0;
   }
 
@@ -1038,19 +1035,19 @@ blockquote > p+p {
   }
 
   .preview__element:nth-child(6) {
-    height: 8.4rem;
+    height: 10rem;
     top: 30%;
     left: 36%;
   }
 
   .preview__element:nth-child(7) {
-    bottom: 27%;
+    bottom: 33%;
     left: -3%;
   }
 
   .preview__element:nth-child(8) {
-    height: 9rem;
-    bottom: 21%;
+    height: 16.25rem;
+    bottom: 15%;
     left: 32%;
   }
 
@@ -1060,17 +1057,18 @@ blockquote > p+p {
   }
 
   .preview__element:nth-child(10) {
-    bottom: -1.5%;
+    height: 7.5rem;
+    bottom: 4.5%;
     left: 0;
   }
 
   .preview__element:nth-child(11) {
-    bottom: 1.5%;
+    bottom: -4.5%;
     left: 39%;
   }
 
   .preview__element:nth-child(12) {
-    bottom: -4.5%;
+    bottom: 0%;
     right: 0;
   }
 
@@ -1082,8 +1080,12 @@ blockquote > p+p {
     max-width: 9rem;
   }
 
-  .preview__element:nth-child(6), .preview__element:nth-child(8), .preview__element:nth-child(10) {
+  .preview__element:nth-child(4), .preview__element:nth-child(6), .preview__element:nth-child(10) {
     height: auto;
+  }
+
+  .preview__element:nth-child(8) {
+    height: 11.25rem;
   }
 
 }
@@ -1094,13 +1096,23 @@ blockquote > p+p {
     max-width: 10.5rem;
   }
 
+  .preview__element:nth-child(4) {
+    top: 27%;
+  }
+
   .preview__element:nth-child(6) {
-    left: 45%;
+    top: 32%;
+    left: 39%;
+  }
+
+  .preview__element:nth-child(7) {
+    bottom: 27%;
   }
 
 }
 
 @media screen and (min-width: 1320px) {
+  
   .preview__element:nth-child(4) {
     right: 12%;
   }
