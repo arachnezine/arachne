@@ -637,9 +637,16 @@ img {
 }
 
 ul, li {
-	margin: 1.5rem 0;
 	padding: 0;
   list-style: circle;
+}
+
+ul {
+  margin: 0.9rem 0;
+}
+
+li {
+  margin: 0.45rem;
 }
 
 li p {
@@ -652,8 +659,14 @@ li p+p {
 
 .nav__info {
   position: fixed;
-  top: 1.5rem;
+  top: 3.5rem;
   right: 0.9rem;
+}
+
+@media screen and (min-width: 480px) {
+  .nav__info {
+    top: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -847,7 +860,7 @@ blockquote > p+p {
   margin: 0;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 480px) {
   .preview__element {
     width: 40%;
   }
@@ -860,15 +873,33 @@ blockquote > p+p {
 }
 
 
-#info {
+section {
   max-width: 39rem;
-  margin: 1.5rem 1.5rem 3rem 1.5rem;
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+  border-bottom: 0.05rem solid #222;
+}
+
+section:first-child, section:last-child {
+  border: none;
 }
 
 @media screen and (min-width: 600px) {
-  #info {
-    margin: 3rem 3rem 6rem 3rem;
+  section {
+    padding: 3rem 3rem 6rem 3rem;
   }
+}
+
+section h4 {
+  display: inline-block;
+  margin: 0.9rem 0 0 0;
+}
+
+.highlight {
+  -webkit-animation: pulse_bg 12s infinite alternate;
+  -moz-animation: pulse_bg 12s infinite alternate;
+  -o-transition: pulse_bg 12s infinite alternate;
+  transition: pulse_bg 12s infinite alternate;
+  background-color: currenColor;
 }
 
 #info a {
