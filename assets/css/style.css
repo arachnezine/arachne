@@ -695,7 +695,7 @@ h4 {
 }
 
 blockquote {
-  margin: 0;
+  margin: 1rem 0;
   padding: 0.6rem 0.9rem;
   max-width: 80%;
   border: 0.05rem solid #04AD7B;
@@ -766,7 +766,7 @@ blockquote > p+p {
 .title__bg h1 {
   font-family: "autopiabold";
   font-size: 3rem;
-  color: #ffffff;
+  color: #F8F8F8;
   margin: 0;
 }
 
@@ -835,6 +835,13 @@ blockquote > p+p {
   border-bottom: none;
   padding: 0;
   font-size: 100%;
+}
+
+.preview__element a:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-transition: none;
+  transition: none;
 }
 
 .preview__element:before {
@@ -1010,7 +1017,7 @@ nav {
 
 .title__menu {
   font-family: "autopiabold";
-  color: #ffffff;
+  color: #F8F8F8;
   margin: 0;
   display: inline-block;
 }
@@ -1052,7 +1059,7 @@ nav {
 
 figure.essay {
   display: inline-block;
-  margin: 0;
+  margin: 1rem 0 0 0;
   padding: 0.6rem 0.9rem;
   border: 0.05rem solid #04AD7B;
   -webkit-animation: pulse_bd 3s infinite alternate;
@@ -1067,8 +1074,23 @@ figure.essay {
   }
 }
 
-.essay__main--content blockquote {
-  border: 0.05rem solid #222;
+.essay__main--content h3+ol {
+  margin-top: 0;
+}
+
+.essay__main--content .sidebox {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.essay__main--content p.sidebox, .essay__main--content ol.sidebox  {
+  width: 60%;
+}
+
+.essay__main--content blockquote.sidebox {
+  width: 30%;
+  border-radius: 10px;
+  margin: 0.9rem 0;
 }
 
 .essay__main--content blockquote+p {

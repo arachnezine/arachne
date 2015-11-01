@@ -10,31 +10,86 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 
-    <title>The effect of the list—Nikos Voyiatzis</title>
+    <title>The Effect of the List—Nikos Voyiatzis</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
   
     <style type="text/css">
 
-  .container {
-  display: flex; /* or inline-flex */
+    /* Webfonts*/
+
+    /** Autopia **/
+
+    @font-face {
+      font-family: 'autopiabold';
+      src: url('../fonts/autopia-bold-webfont.eot');
+      src: url('../fonts/autopia-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/autopia-bold-webfont.woff2') format('woff2'),
+        url('../fonts/autopia-bold-webfont.woff') format('woff'),
+        url('../fonts/autopia-bold-webfont.ttf') format('truetype'),
+        url('../fonts/autopia-bold-webfont.svg#autopiabold') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /** Liberation **/
+
+    @font-face {
+      font-family: 'liberation_sansregular';
+      src: url('../fonts/liberationsans-regular-webfont.eot');
+      src: url('../fonts/liberationsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/liberationsans-regular-webfont.woff2') format('woff2'),
+        url('../fonts/liberationsans-regular-webfont.woff') format('woff'),
+        url('../fonts/liberationsans-regular-webfont.ttf') format('truetype'),
+        url('../fonts/liberationsans-regular-webfont.svg#liberation_sansregular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @-webkit-keyframes pulse_bg {
+  0% {background-color: #CCDBFC;}
+  10% {background-color: #4343F3;}
+  25% {background-color: #1111FF;}
+  45% {background-color: #CF61DC;}
+  70% {background-color: #F6F162;}
+  85% {background-color: #70F589;}
+  100% {background-color: #04AD7B;}
+}
+
+@-moz-keyframes pulse_bg {
+  0% {background-color: #CCDBFC;}
+  10% {background-color: #4343F3;}
+  25% {background-color: #1111FF;}
+  45% {background-color: #CF61DC;}
+  70% {background-color: #F6F162;}
+  85% {background-color: #70F589;}
+  100% {background-color: #04AD7B;}
+}
+
+@-o-keyframes pulse_bg {
+  0% {background-color: #CCDBFC;}
+  10% {background-color: #4343F3;}
+  25% {background-color: #1111FF;}
+  45% {background-color: #CF61DC;}
+  70% {background-color: #F6F162;}
+  85% {background-color: #70F589;}
+  100% {background-color: #04AD7B;}
 }
 	
-	
 		* { margin: 0; padding: 0; }
-		body { background: #75F0B3; }
+		body { font-size: 20px; line-height: 1.5; background: #75F0B3; }
 		h1,h2,h3,h4 { margin: 0 0 3px 0; }
-	   h1 { color: white; font: bold 20px Helvetica, Arial, Sans-Serif;
-		       text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #E052E0;
+	   h1 { color: #F8F8F8; font: bold 20px Helvetica, Arial, Sans-Serif;
+		       text-shadow: 1px 1px #222, 2px 2px #222, 3px 3px #222;
 		       -webkit-transition: all 0.12s ease-out;
 		       -moz-transition: all 0.12s ease-out;
 		       -o-transition: all 0.12s ease-out;
 		}
 		h1:hover {
 		    position: relative; top: -3px; left: -3px; 
-		    text-shadow: 1px 1px #fe4902, 20x 200px #E052E0, 3px 3px #fe4902, 4px 4px #E052E0, 5px 50px #E052E0, 6px 6px #fe4902;
+		    text-shadow: 1px 1px #F8F8F8, 20x 200px #222, 3px 3px #222, 4px 4px #222, 5px 50px #222, 6px 6px #222;
 		}
-		h2 { color: white; font: bold 80px Arial, Arial, Arial;
+		h2 { color: white; font: bold 72px Arial, Arial, Arial;
            text-shadow: 1px 1px #02a2fe, 2px 2px #02a2fe, 3px 3px #02a2fe;
 		     -webkit-transition: all 0.12s ease-out;
 		     -moz-transition: all 0.12s ease-out;
@@ -61,8 +116,10 @@
 		}
 		h4:hover {
 		    text-shadow: 1px 1px #02a2fe, 2px 2px #02a2fe, 3px 3px #02a2fe, 4px 4px #02a2fe, 5px 5px #02a2fe, 6px 6px #02a2fe;
-		}  
-		#page-wrap { width: 700px; margin: 0 auto; padding: 20px; text-align: center; }
+		} 
+    
+		#page-wrap { max-width: 45rem; margin: 0 auto; padding: 1.5rem; text-align: center; }
+		.text__wrapper { max-width: 39rem; margin: 0 auto; text-align: center;}
 		#about { margin: 50px 0 0 0; }
 		#about div { text-transform: uppercase; color: #eee; font: 100px Helvetica, Arial, Sans-Serif;
 		             -webkit-transition: all 0.12s ease-out;
@@ -73,41 +130,82 @@
 		#about div:hover { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); text-shadow: 500px 500px 500px #333; }
 		#about a { color: #fe4902; text-decoration: none;  }
 
-		title { font-size: 20}
+		figure {margin: 0.9rem auto; padding: 0.45rem;}
+
+		figure.next__to { display: inline-block;}
+
+		nav {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      justify-content: space-between;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 1.5em;
+      -webkit-animation: pulse_bg 18s infinite alternate;
+      -moz-animation: pulse_bg 18s infinite alternate;
+      -o-transition: pulse_bg 18s infinite alternate;
+      transition: pulse_bg 18s infinite alternate;
+      background-color: #67FFA9;
+      border-bottom: 01px solid #222;
+    }
+
+    nav {
+    	font-family: 'liberation_sansregular';
+    }
+
+    .title__menu {
+    	font-size: 1.7em;
+      line-height: 1.25;
+      font-family: "autopiabold";
+      color: #F8F8F8;
+      margin: 0;
+      display: inline-block;
+      text-shadow: none;
+    }
+
+    .notes {
+      margin: 3rem auto; 
+
+    	word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+        hyphens: auto;
+    }
 
 	</style>
 </head>
 
 <body>
+	<nav id="index">
+      <h1 class="title__menu">Arachne</h1>
+      <a href="../../index.html">⟵ index</a>
+    </nav>
 
 	<div id="page-wrap">
 
 <h2>	
-	the effect of the list
+	The Effect of the List
 </h2>
 	<h1>
 <h1>
-<a href="http://thereisamajorprobleminaustralia.tumblr.com/">by nikos voyiatzis</a>
+<a href="http://thereisamajorprobleminaustralia.tumblr.com/">by Nikos Voyiatzis</a>
 </h1>
+<figure class="next__to">
+  <img src="http://33.media.tumblr.com/0d638c45a7128b9aba5e5c7cbf086816/tumblr_nfrpekv9E81qhl6uko1_250.gif" alt="mygif" style="width:304px;height:228px;">
+</figure>
+<figure class="next__to">
+  <img src="http://33.media.tumblr.com/c6aee77eb5cf55f6f65520b7e7f2a0f8/tumblr_nuu9v75b8r1qhl6uko1_250.gif" alt="mygif2" style="width:304px;height:228px;">
+</figure>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<img src="http://33.media.tumblr.com/0d638c45a7128b9aba5e5c7cbf086816/tumblr_nfrpekv9E81qhl6uko1_250.gif" alt="mygif" style="width:304px;height:228px;">
-<img src="http://33.media.tumblr.com/c6aee77eb5cf55f6f65520b7e7f2a0f8/tumblr_nuu9v75b8r1qhl6uko1_250.gif" alt="mygif2" style="width:304px;height:228px;">
-<br>
-<br>
-<h1>
-<br>
-<br>
-
-
-
-
+<div class="text__wrapper">
 <h1>
 	i  n t r o d u c t i o n :  t h e   l i s t
 <br>
@@ -125,9 +223,10 @@ t h e   c o l l e c t o r   a n d    t h e   i n f o r m a t i o n   t e c h n o
 Humans are  naturally collectors. The technology of the list seems a meaningful and very useful tool. On the one hand supports memory, provides easy and time wise effective access to information.  The list seems to be a material form of classification. Classification is the act of organising things in categories.Is it  information, goods, artworks, ideas, whatever you name it. Classification remains an immaterial mind process if its not written in lists.
   
 The list is an information technology and one of the first constructs that emerge following the technology of writing. In fact, some of the first writings of humanity where lists.
-<br>
-<img src="http://i.livescience.com/images/i/000/002/045/i02/080211-cuniform-writing-02.jpg?1296071859" alt="image from max plank society" style="width:304px;height:228px;">
-<br>
+
+<figure>
+  <img src="http://i.livescience.com/images/i/000/002/045/i02/080211-cuniform-writing-02.jpg?1296071859" alt="image from max plank society" style="width:304px;height:228px;">
+</figure>
 However,  I am looking at it as all technologies and media. It shapes us and constructs us in a certain way. As a medium it becomes a norm through repetition. The list is a culture itself. The culture of organising things in space in clarified and stable ways. And as any culture, is beeing reproduced through individuals, who, of course, find it quite easy to use lists in order to organise themselves and their activities. Moreover within web culture all users became cataloguers and data indexers that are navigating within or creating themselves lists all the time.
 "
 <br>
@@ -153,8 +252,10 @@ Their ideas should be taken into account when we attempt to describe the ideolog
 
 "
 <BR><BR>
-<img src="https://pbs.twimg.com/media/CMoGdfGUAAAalYu.png
+<figure>
+  <img src="https://pbs.twimg.com/media/CMoGdfGUAAAalYu.png
 " alt="mWHOIS" style="width:304px;height:328px;">
+</figure>
 
 <br>
 <br>
@@ -179,8 +280,10 @@ In our advanced information societies, we don’t learn only ethical, social o
  Part of the document defines the design role of the list within HTML:
 
 <BR><BR>
-<img src="http://i.imgur.com/8Rpzz85.png
+<figure>
+  <img src="http://i.imgur.com/8Rpzz85.png
 " alt="listtim" style="width:304px;height:328px;">
+</figure>
 
 <br>
 The image documents that the element of the list(LI) and its particular expressions as ordered (OL), unordered (UL), MENU or DIR, are part of the syntax of HTML.  This is important as it shows not only the significance of  the list as a design form of the web through an archeological perspective but also reveals its syntactical nature, which is classificatory. As documented in the image, in HTML there are also unordered lists! Of course here unordered stands for not classified under a number but under a sign or bullet. Additionaly, the opening list tag [...] must be “immediately followed by the first list element”. 
@@ -231,10 +334,12 @@ It also forces as to look at any content the same way.
   Is the world of information a space where we only want to be productive, effective, go, hit, find, use? Or could we have seen the internet as a real space build on and for information?A printed list due to the materiality of its technology cannot provide the sense of depth. However, the online list is designed within an environment that makes possible the manifestation of a space, with characteristics that would consist a spatial and sensual experience. Why this doesn't happen to online search results should be looked also through the history of 3d electronic space to  3d online space and the reasons why they never became  a dominant spatial design model, although they emerged in the early 90s.   
   The work of M. Cooper and the Visible Language workshop of MIT in 1994 “Information Landscapes”,
 <br>
+<figure>
   <img src="http://inventinginteractive.com/wp-content/uploads/2010/01/financials_01.gif"  style="width:304px;height:228px;">
-  <br>
+</figure>
+<figure>
   <img src="http://grahamfoundation.org/system/grants/images/2982/large/06.jpg" style="width:304px;height:228px;">
-
+</figure>
 
 was a significant contribution for thinking the possibilities of electronic media, information and space. Cooper was a co-founder of the MIT Media lab and was teaching interactive design. The work, a demo of a data visualization proposals, presented a three dimensional textual space of  typography, while investing on the possibilities of interactivity and animation. While the creators bring the elements  of infinite zoom, transparency and live data, the user would navigate in a full three dimensional space, changing his position upon his desire. I am bringing this example in order to explain that ideas related to more interesting and rich information experiences are not new. However, information productivity and standardisation do not allow playful and deep experiences with information. In Information Landscapes the space was purely textual but the navigation possibilities transformed the list notion of space to something much more interesting. As David Reinfurt  writes,  the design was focusing on creating connections and making meaning. In other words,the way information was organised was not investing in clarifying and oversimplyfying but in subjective associations.
 
@@ -254,9 +359,9 @@ Do we still have the time to see the internet as a space? To oppose to the effec
 
 
 "
-<br>
-<br>
-<H6>
+</h1>
+
+<H6 class="notes">
 	n o t e s : the text is a modified version of my masters thesis in networked media program of the Piet Zwart Institute, Many thanx to Annet Dekker and Steve Rushton.//
 	s o u r c e s
 books
@@ -276,19 +381,12 @@ Reinfurt, David. This Stands as a Sketch for the future. Muriel Cooper And The V
 Young, Liam Cole. On Lists and Networks: An Archaeology of Form. Amodern, 2015
 [accesible at http://amodern.net/article/on-lists-and-networks/]
 W. Boyd, Rayward. The Case of Paul Otlet: Pioneer of Information Science, Internationalist, Visionary: Reflections on Biography. 1991.
-[accesible at http://people.lis.illinois.edu/~wrayward/otlet/PAUL_OTLET_REFLECTIONS_ON_BIOG.HTM]</H6>
-<br>
-<br>
+[accesible at http://people.lis.illinois.edu/~wrayward/otlet/PAUL_OTLET_REFLECTIONS_ON_BIOG.HTM]
+</H6>
 
-<br>
-</h1>
-<br>
-<br>
-<br>
-<br>
-</h1>
-		
-			<h1>
+</div>
+
+<h1>
 <div>
           <p>
             <a rel="license"
