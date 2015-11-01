@@ -636,13 +636,20 @@ img {
   width: 100%;
 }
 
-ul, li {
+ul, ol, li {
 	padding: 0;
-  list-style: circle;
 }
 
 ul {
   margin: 0.9rem 0;
+}
+
+ul > li {
+  list-style: circle;
+}
+
+ol > li {
+  list-style: decimal;
 }
 
 li {
@@ -872,7 +879,6 @@ blockquote > p+p {
   }
 }
 
-
 section {
   max-width: 39rem;
   padding: 1.5rem 1.5rem 3rem 1.5rem;
@@ -1020,10 +1026,6 @@ nav {
   }
 }
 
-.essay__main--content a:hover {
-  background-color: #67FFA9;
-}
-
 .essay__main--content h1 {
   font-family: 'autopiabold';
 }
@@ -1046,10 +1048,6 @@ nav {
   .essay__main--content h2 {
     margin: 3rem 0 0 1.5rem;
   }
-}
-
-.essay__main--content p {
-  /*text-shadow: 1px 1px #FFFF00, 0px 0px #000000, 1px 1px #FFFFFF;*/
 }
 
 figure.essay {
@@ -1080,4 +1078,64 @@ figure.essay {
 .nav__index {
   display: inline-block;
   margin: 3rem 0 0 0;
+}
+
+/* Essays—custom layout: Hub & Spoke */
+
+.h-and-s {
+  max-width: 100%;
+  margin: 1.5rem 1.5rem 3rem 1.5rem;
+  padding: 0;
+}
+
+.h-and-s h1, .h-and-s h3 {
+  text-align: center;
+}
+
+.h-and-s p, .h-and-s ol, .h-and-s a {
+  font-size: 16px;
+}
+
+.h-and-s p {
+  margin: 0;
+  text-indent: 2.1rem;
+}
+
+.h-and-s figure {
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.h-and-s img {
+  width: auto;
+  max-width: 100%; 
+}
+
+@media screen and (min-width: 600px) {
+  .h-and-s img {
+    width: auto; 
+  }
+}
+
+.h-and-s .two--columns__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 600px) {
+  .h-and-s .two--columns__wrapper .one--column {
+    width: 47%;
+    margin: 0.9rem 0;
+  }
+}
+
+.h-and-s .one--column {
+  max-width: 27rem;
+  margin: 0.9rem auto;
+}
+
+.h-and-s .video--full-size {
+  margin: 3rem auto;
+  text-align: center;
 }
