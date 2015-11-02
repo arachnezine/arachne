@@ -633,7 +633,7 @@ a:hover {
     font-size: 85%;
   }
 
-  p > a {
+  p > a, li > a {
     font-size: 100%;
   }
 }
@@ -1037,6 +1037,15 @@ nav {
   display: inline-block;
 }
 
+.footnotes {
+   word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+        hyphens: auto;
+}
+
 .essay__main--content h1 {
   font-family: 'autopiabold';
 }
@@ -1087,14 +1096,30 @@ figure.essay {
   vertical-align: top;
 }
 
-.essay__main--content p.sidebox, .essay__main--content ol.sidebox  {
-  width: 60%;
+.essay__main--content blockquote.sidebox {
+  border-radius: 9px;
 }
 
-.essay__main--content blockquote.sidebox {
-  width: 30%;
-  border-radius: 10px;
-  margin: 0.9rem 0;
+@media screen and (min-width: 540px) {
+  .essay__main--content p.sidebox, .essay__main--content ol.sidebox  {
+    width: 50%;
+  }
+
+  .essay__main--content blockquote.sidebox {
+    width: 25%;
+    margin: 0.9rem 0 0.9rem 10%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .essay__main--content p.sidebox, .essay__main--content ol.sidebox  {
+    width: 60%;
+  }
+
+  .essay__main--content blockquote.sidebox {
+    width: 30%;
+    margin-left: 0;
+  }
 }
 
 .essay__main--content blockquote+p {
@@ -1112,6 +1137,7 @@ figure.essay {
   max-width: 100%;
   margin: 1.5rem 1.5rem 3rem 1.5rem;
   padding: 0;
+  border: none;
 }
 
 .h-and-s h1, .h-and-s h3 {
