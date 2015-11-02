@@ -633,7 +633,7 @@ a:hover {
     font-size: 85%;
   }
 
-  p > a, li > a {
+  p > a, li > a, li > p {
     font-size: 100%;
   }
 }
@@ -672,7 +672,7 @@ li p+p {
 
 .nav__info {
   position: fixed;
-  top: 3.5rem;
+  top: 2.7rem;
   right: 0.9rem;
 }
 
@@ -736,7 +736,7 @@ blockquote > p+p {
 
 @media screen and (min-width: 480px) {
   .keep-in-place__wrapper {
-    padding: 1.5rem 3rem 4.5rem 3rem;
+    padding: 2.1rem 3rem;
   }
 }
 
@@ -753,7 +753,6 @@ blockquote > p+p {
 @media screen and (min-width: 600px) {
   .preview__wrapper {
     width: 100%;
-    height: 90vh;
     position: relative;
     margin: 0 auto;
     padding: 6rem 0;
@@ -761,18 +760,11 @@ blockquote > p+p {
 
   .title__bg {
     width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
     text-align: center;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -808,7 +800,7 @@ blockquote > p+p {
 }
 
 .preview__element__wrapper {
-  margin-bottom: 0;
+  margin: 0;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -823,19 +815,9 @@ blockquote > p+p {
   align-items: center;
 }
 
-@media screen and (min-width: 600px) {
-  .preview__element__wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
-}
-
 .preview__element {
 	position: relative;
-  display: block;
+  display: inline-block;
   text-align: left;
   border: 0.05rem solid #222;
   margin: 0.3rem;
@@ -913,6 +895,10 @@ section {
 
 section.preview__wrapper {
   padding: 0;
+}
+
+section.preview__wrapper h4 {
+  display: block;
 }
 
 section:first-child, section:last-child {
@@ -1037,7 +1023,7 @@ nav {
   display: inline-block;
 }
 
-.footnotes {
+.essay__main--content {
    word-break: break-word;
 
 -webkit-hyphens: auto;
