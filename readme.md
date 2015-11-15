@@ -2,13 +2,13 @@ arachen.cc
 ================
 A zine about gender, labour and technology. A project collaboration with [Dorothy Howard](http://www.dorothyhoward.com).
 
-⤷ [http://arachne.cc](http://arachne.cc)
-
 > The central question the Arachne webzine takes up is the relationship of mythology to the internet.
 
 > The zine’s thematics of gender, labor, and technology focus this project on explorations of the landscape upon which ideas of self, society, public, community, and craft, are constructed online today, using the myth of the spider as a starting point.
 
 Each issue explores a variety of subjects instead of being mono-thematic.
+
+⤷ [http://arachne.cc](http://arachne.cc)
 
 ### Colophon
 
