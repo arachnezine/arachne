@@ -919,13 +919,12 @@ section h4 {
 }
 
 #info a {
-  /* Non standard for webkit */
-     word-break: break-word;
+  word-break: break-word;
 
--webkit-hyphens: auto;
-   -moz-hyphens: auto;
-    -ms-hyphens: auto;
-        hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .donate {
@@ -1026,12 +1025,12 @@ nav {
 }
 
 .essay__main--content {
-   word-break: break-word;
+  word-break: break-word;
 
--webkit-hyphens: auto;
-   -moz-hyphens: auto;
-    -ms-hyphens: auto;
-        hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .essay__main--content h1 {
