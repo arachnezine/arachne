@@ -1,6 +1,8 @@
 arachen.cc
 ================
-A zine about gender, labour and technology.
+A zine about gender, labour and technology. A project collaboration with [Dorothy Howard](http://www.dorothyhoward.com).
+
+⤷ [http://arachne.cc](http://arachne.cc)
 
 > The central question the Arachne webzine takes up is the relationship of mythology to the internet.
 
