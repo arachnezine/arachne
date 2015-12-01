@@ -964,7 +964,14 @@ footer {
   -moz-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  -ms-align-items: baseline;
   align-items: baseline;
+}
+
+.col-right p+p {
+  margin: 1.8rem 0 0 0;
 }
 
 footer p {
@@ -977,8 +984,12 @@ footer p {
     flex-direction: row;
   }
 
-  footer p {
+  footer .col-left, footer .col-right {
     width: 47%;
+  }
+
+  .col-right p+p {
+    margin: 1.5rem 0 0 0;
   }
 }
 
@@ -1001,6 +1012,9 @@ nav {
   -ms-justify-content: space-between;
   justify-content: space-between;
   justify-content: space-between;
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  -ms-align-items: baseline;
   align-items: baseline;
   padding: 1.5rem;
   -webkit-animation: pulse_bg 18s infinite alternate;
