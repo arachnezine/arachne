@@ -625,7 +625,7 @@ a:hover {
   -moz-animation: pulse_bg 0.25s infinite alternate;
   -o-transition: pulse_bg 0.25s infinite alternate;
   transition: pulse_bg 0.25s infinite alternate;
-  background-color: currenColor;
+  background-color: currentColor;
 }
 
 @media screen and (max-width: 599px) {
