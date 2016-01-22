@@ -838,6 +838,7 @@ blockquote > p+p {
   -moz-animation: none;
   -o-transition: none;
   transition: none;
+  background-color: transparent;
 }
 
 .preview__element:before {
