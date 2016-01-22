@@ -954,6 +954,41 @@ section h4 {
   margin: 0.9rem 0 0 0;
 }
 
+.main__column {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: wrap;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  -ms-align-items: baseline;
+  align-items: baseline;
+}
+
+#about {
+  width: 50%;
+  margin: 0 0 0 1.5rem;
+}
+
+#info {
+  width: 35%;
+  margin: 0 1.5rem 0 0;
+}
+
+/*#info li > p, #info li > a {
+  display: none;
+}
+
+#info li > p:first-child {
+  display: block;
+}*/
+
 #info a {
   word-break: break-word;
 
