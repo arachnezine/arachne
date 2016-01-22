@@ -1017,7 +1017,7 @@ nav {
   -moz-align-items: baseline;
   -ms-align-items: baseline;
   align-items: baseline;
-  padding: 1.5rem;
+  padding: 0.9rem;
   -webkit-animation: pulse_bg 18s infinite alternate;
   -moz-animation: pulse_bg 18s infinite alternate;
   -o-transition: pulse_bg 18s infinite alternate;
@@ -1028,7 +1028,7 @@ nav {
 
 @media screen and (min-width: 600px) {
   nav {
-    padding: 1.5rem 3rem;
+    padding: 0.9rem 3rem;
   }
 }
 
