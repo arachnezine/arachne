@@ -847,12 +847,47 @@ blockquote > p+p {
   margin-top: 0; 
 }
 
+/* Issue #00 */
+
 .preview__element:hover {
+  /*-moz-box-shadow: 0px 6px 6px 0px #222;
+  -webkit-box-shadow: 0px 6px 6px 0px #222;
+  box-shadow: 0px 6px 6px 0px #222;
+  background-color: #F8F8F8;
+  background-color: rgba(255, 255, 255, 0.15);*/
+}
+
+/* Issue #01 */
+
+.preview__element__wrapper:hover > .preview__element {
+  opacity: 0.5;
+}
+
+.preview__element__wrapper > .preview__element:hover {
+  opacity: 1.0;
   -moz-box-shadow: 0px 6px 6px 0px #222;
   -webkit-box-shadow: 0px 6px 6px 0px #222;
   box-shadow: 0px 6px 6px 0px #222;
   background-color: #F8F8F8;
   background-color: rgba(255, 255, 255, 0.15);
+}
+
+.preview--article {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 0.05rem solid #04AD7B;
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
+}
+
+.preview--article .on-hover {
+  display: block;
 }
 
 .preview__element h4 {
