@@ -628,12 +628,16 @@ a:hover {
   background-color: currentColor;
 }
 
-@media screen and (max-width: 599px) {
-  p, a, li {
-    font-size: 85%;
-  }
+p, a, li {
+  font-size: 85%;
+}
 
-  p > a, li > a, li > p {
+p > a, li > a, li > p {
+  font-size: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  p, a, li {
     font-size: 100%;
   }
 }
@@ -652,10 +656,12 @@ ul {
 
 ul > li {
   list-style: circle;
+  margin: 0.45rem 0 0.45rem 1.1rem;
 }
 
 ol > li {
   list-style: decimal;
+  margin: 0.45rem 0 0.45rem 1.9rem;
 }
 
 li {
@@ -664,10 +670,6 @@ li {
 
 li p {
   margin: 0 auto;
-}
-
-li p+p {
-  text-indent: 1.5rem;
 }
 
 .nav__info {
@@ -942,7 +944,7 @@ section h4 {
   margin: 0.9rem 0 0 0;
 }
 
-.main__column {
+.home--main__column {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -959,9 +961,22 @@ section h4 {
   align-items: baseline;
 }
 
+.contributor--info {
+  text-indent: 1.5rem; 
+}
+
+#info a {
+  word-break: break-word;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 @media screen and (min-width: 600px) {
   
-  .main__column {
+  .home--main__column {
     flex-direction: row;
   }
 
@@ -974,15 +989,6 @@ section h4 {
     width: 35%;
     margin: 0 1.5rem 0 0;
   }
-}
-
-#info a {
-  word-break: break-word;
-
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
 }
 
 .donate {
@@ -1144,6 +1150,31 @@ figure.essay {
   figure.essay {
     padding: 0.9rem 1.5rem;
   }
+}
+
+.fancybox {
+  cursor: zoom-in;
+  border-bottom: none;
+}
+
+.fancybox-close {
+  border-bottom: none;
+}
+
+.fancybox-nav:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-transition: none;
+  transition: none;
+  background-color: transparent;
+}
+
+.fancybox-nav span:hover {
+  -webkit-animation: pulse_bg 0.25s infinite alternate;
+  -moz-animation: pulse_bg 0.25s infinite alternate;
+  -o-transition: pulse_bg 0.25s infinite alternate;
+  transition: pulse_bg 0.25s infinite alternate;
+  background-color: currentColor;
 }
 
 .essay__main--content h3+ol {
