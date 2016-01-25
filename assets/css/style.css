@@ -608,6 +608,13 @@ pre, code {
   line-height: 1.5;
 }
 
+hr {
+  margin: 2.4rem 0;
+  border-style: solid;
+  border-width: 0.025rem;
+  border-top: 0.05rem solid #222;
+}
+
 p {
   font-size: 1rem;
   margin: 0.9rem 0;
@@ -935,7 +942,7 @@ section:first-child, section:last-child {
 @media screen and (min-width: 600px) {
   section {
     margin: 0 3rem;
-    padding: 3rem 0 6rem 0;
+    padding: 3rem 0;
   }
 }
 
@@ -944,25 +951,42 @@ section h4 {
   margin: 0.9rem 0 0 0;
 }
 
-.home--main__column {
+.info--contributor__list {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  flex-direction: column;
+  -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  -webkit-align-items: baseline;
-  -moz-align-items: baseline;
-  -ms-align-items: baseline;
-  align-items: baseline;
+  -webkit-align-content: flex-start;
+  -moz-align-content: flex-start;
+  -ms-align-content: flex-start;
+  align-content: flex-start;
 }
 
-.contributor--info {
-  text-indent: 1.5rem; 
+.info--contributor__list li {
+  list-style: none;
+  margin: 0 0 1.2rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .info--contributor__list {
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+
+  .info--contributor__list li {
+    width: 30%;
+  }
 }
 
 #info a {
@@ -972,23 +996,6 @@ section h4 {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-}
-
-@media screen and (min-width: 600px) {
-  
-  .home--main__column {
-    flex-direction: row;
-  }
-
-  #about {
-    width: 50%;
-    margin: 0 0 0 1.5rem;
-  }
-
-  #info {
-    width: 35%;
-    margin: 0 1.5rem 0 0;
-  }
 }
 
 .donate {
@@ -1216,6 +1223,10 @@ figure.essay {
   margin: 0 0 1.8rem 0;
 }
 
+.contributor--info {
+
+}
+
 .nav__index {
   display: inline-block;
   margin: 3rem 0 0 0;
@@ -1223,8 +1234,33 @@ figure.essay {
 
 /* Archive */
 
+.archive--button {
+  margin: 3rem 0 0 0;
+  padding: 1.5rem 0.9rem;
+  text-align: center;
+  border: 0.05rem solid #04AD7B;
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
+}
+
+@media scren and (min-width: 600px) {
+  .archive--button {
+    padding: 0.9rem 1.5rem;
+  }
+}
+
 .archive--preview__issue {
   border: none;
   width: 100%;
-  height: 12rem;
+  height: 6rem;
+  margin: 0.3rem 0;
+  border: 0.05rem solid #222;
+}
+
+@media screen and (min-width: 600px) {
+  .archive--preview__issue {
+    height: 12rem;
+  }
 }
