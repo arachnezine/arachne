@@ -17,5 +17,5 @@ We decided not to make use of a CMS because we wanted to directly mark the text 
 
 Typography is set to [Liberation](http://usemodify.com/fonts/liberation/) for the body text, whereas articles' headlines and the main title are set to [Autopia](http://autopia-type.tumblr.com).
 
-For micro-donations we're using both using [flattr](https://flattr.com) and paypal.
+For micro-donations we're using both [flattr](https://flattr.com) and paypal.
 
