@@ -857,7 +857,7 @@ blockquote > p+p {
 }
 
 .preview__element__wrapper:hover > .preview__element {
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .preview__element__wrapper > .preview__element:hover {
@@ -866,7 +866,7 @@ blockquote > p+p {
   -webkit-box-shadow: 0px 6px 6px 0px #222;
   box-shadow: 0px 6px 6px 0px #222;
   background-color: #F8F8F8;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .preview--article {
