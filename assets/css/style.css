@@ -857,7 +857,7 @@ blockquote > p+p {
 }
 
 .preview__element__wrapper:hover > .preview__element {
-  opacity: 0.1;
+  opacity: 0;
 }
 
 .preview__element__wrapper > .preview__element:hover {
