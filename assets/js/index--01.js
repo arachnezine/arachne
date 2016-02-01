@@ -2,13 +2,13 @@ $(document).ready(function() {
 
     $(".preview__element").hover(function() {
       $(".preview__element").stop().fadeTo(100, 0.0);
-      $(this).stop().fadeTo(100, 1);
-      $(this).stop().fadeTo(100, 1);
-      $(this).addClass('preview__element--hover');
+      // $(this).stop().fadeTo(100, 1);
+      // $(this).stop().fadeTo(100, 1);
+      // $(this).addClass('preview__element--hover');
     }, function () {
       $(".preview__element").stop().fadeTo(100, 1);
-      $(this).stop().fadeTo(100, 1);
-      $(this).removeClass('preview__element--hover')
+      // $(this).stop().fadeTo(100, 1);
+      // $(this).removeClass('preview__element--hover')
     })
 
     $("#preview--element__01").hover (function() {

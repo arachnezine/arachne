@@ -608,13 +608,6 @@ pre, code {
   line-height: 1.5;
 }
 
-hr {
-  margin: 2.4rem 0;
-  border-style: solid;
-  border-width: 0.025rem;
-  border-top: 0.05rem solid #222;
-}
-
 p {
   font-size: 1rem;
   margin: 0.9rem 0;
@@ -856,7 +849,6 @@ blockquote > p+p {
   margin-top: 0; 
 }
 
-
 .preview__element--hover {
   opacity: 1.0;
   -moz-box-shadow: 0px 6px 6px 0px #222;
@@ -1046,14 +1038,14 @@ footer p {
   width: auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 999px) {
   footer {
     padding: 1.5rem 3rem;
     flex-direction: row;
   }
 
   footer .col-left, footer .col-right {
-    width: 47%;
+    width: 39%;
   }
 
   .col-right p+p {
@@ -1221,7 +1213,13 @@ figure.essay {
 }
 
 .contributor--info {
+  border-top: 0.05rem solid #222;
+  margin: 2.4rem 0 0 0;
+  padding: 1.5rem 0 0 0;
+}
 
+.contributor--info p {
+  font-style: italic;
 }
 
 .nav__index {
@@ -1258,6 +1256,6 @@ figure.essay {
 
 @media screen and (min-width: 600px) {
   .archive--preview__issue {
-    height: 12rem;
+    height: 27rem;
   }
 }
