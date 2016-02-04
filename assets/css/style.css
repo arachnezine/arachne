@@ -887,11 +887,6 @@ blockquote > p+p {
   }
 }
 
-.preview__element h4+h4 {
-  font-family: 'liberation_sansbold_italic';
-  margin: 0;
-}
-
 @media screen and (min-width: 480px) {
   .preview__element {
     width: 40%;
@@ -1139,6 +1134,26 @@ nav {
   }
 }
 
+/* roger-van-voorhees */
+
+#roger-van-voorhees h2 {
+  margin: 4.5rem 0 0 1rem;
+}
+
+#roger-van-voorhees h2:first-of-type {
+  margin-top: 2.4rem;
+}
+
+@media screen and (min-width: 600px) {
+  #roger-van-voorhees h2 {
+    margin: 9rem 0 0 1.5rem;
+  }
+
+  #roger-van-voorhees h2:first-of-type {
+    margin-top: 2.4rem;
+  }
+}
+
 figure.essay {
   display: inline-block;
   margin: 1rem 0 0 0;
@@ -1288,8 +1303,9 @@ sup {
 }
 
 .archive--preview__issue {
-  border: none;
-  width: 100%;
+  display: block;
+  width: 1px;
+  min-width: 100%;
   height: 6rem;
   margin: 0.3rem 0;
   border: 0.05rem solid #222;
