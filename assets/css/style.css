@@ -1269,10 +1269,6 @@ sup {
   padding: 1.5rem 0 0 0;
 }
 
-.contributor--info p {
-  /*font-style: italic;*/
-}
-
 .contributor--info__name {
   font-style: normal;
   font-weight: bold; 
