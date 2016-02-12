@@ -1270,7 +1270,7 @@ sup {
 }
 
 .contributor--info p {
-  font-style: italic;
+  /*font-style: italic;*/
 }
 
 .contributor--info__name {
