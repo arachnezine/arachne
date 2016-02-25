@@ -565,6 +565,16 @@ th {
   100% {background-color: #04AD7B;}
 }
 
+@keyframes pulse_bg {
+  0% {background-color: #CCDBFC;}
+  10% {background-color: #4343F3;}
+  25% {background-color: #1111FF;}
+  45% {background-color: #CF61DC;}
+  70% {background-color: #F6F162;}
+  85% {background-color: #70F589;}
+  100% {background-color: #04AD7B;}
+}
+
 @-webkit-keyframes pulse_bd {
   0% {border-color: #CCDBFC;}
   10% {border-color: #4343F3;}
@@ -586,6 +596,16 @@ th {
 }
 
 @-o-keyframes pulse_bd {
+  0% {border-color: #CCDBFC;}
+  10% {border-color: #4343F3;}
+  25% {border-color: #1111FF;}
+  45% {border-color: #CF61DC;}
+  70% {border-color: #F6F162;}
+  85% {border-color: #70F589;}
+  100% {border-color: #04AD7B;}
+}
+
+@keyframes pulse_bd {
   0% {border-color: #CCDBFC;}
   10% {border-color: #4343F3;}
   25% {border-color: #1111FF;}
