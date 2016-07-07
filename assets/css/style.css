@@ -992,7 +992,28 @@ section h4 {
   }
 }
 
-.donate {
+.banner--block {
+  margin: 0.9rem 0 0.9rem 0;
+  padding: 2.4rem 1.5rem;
+  text-align: center;
+  border: 0.05rem solid #04AD7B;
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
+}
+
+@media scren and (min-width: 600px) {
+  .banner--block {
+    margin: 0.9rem 3rem 3rem 3rem;
+  }
+}
+
+.title--serif {
+  font-family: 'autopiabold';
+}
+
+.banner--inline {
   margin: 3rem 0;
   padding: 0.9rem;
   text-align: center;
@@ -1004,7 +1025,7 @@ section h4 {
 }
 
 @media scren and (min-width: 600px) {
-  .donate {
+  .banner--inline {
     padding: 0.9rem 1.5rem;
   }
 }
