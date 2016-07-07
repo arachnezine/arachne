@@ -706,21 +706,35 @@ li p {
   margin: 0 auto;
 }
 
-.nav__info {
+.nav__info li {
   position: fixed;
-  top: 2.7rem;
-  right: 0.9rem;
+  list-style: none;
+  top: 0.45rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__info li:first-child {
+  left: 1.5rem;
+}
+
+.nav__info li:last-child {
+  right: 1.5rem; 
 }
 
 @media screen and (min-width: 480px) {
-  .nav__info {
+  .nav__info li {
     top: 1.5rem;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .nav__info {
-    right: 1.2rem;
+  .nav__info li:first-child {
+    left: 1.2rem;
+  }
+
+  .nav__info li:last-child {
+    right: 1.2rem; 
   }
 }
 
@@ -1293,20 +1307,7 @@ sup {
 /* Archive */
 
 .archive--button {
-  margin: 3rem 0 0 0;
-  padding: 1.5rem 0.9rem;
-  text-align: center;
-  border: 0.05rem solid #04AD7B;
-  -webkit-animation: pulse_bd 3s infinite alternate;
-  -moz-animation: pulse_bd 3s infinite alternate;
-  -o-transition: pulse_bd 3s infinite alternate;
-  transition: pulse_bd 3s infinite alternate;
-}
-
-@media scren and (min-width: 600px) {
-  .archive--button {
-    padding: 0.9rem 1.5rem;
-  }
+  display: inline-block;
 }
 
 .archive--preview__issue {
