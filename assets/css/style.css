@@ -715,26 +715,16 @@ li p {
 }
 
 .nav__info li:first-child {
-  left: 1.5rem;
+  left: 1.2rem;
 }
 
 .nav__info li:last-child {
-  right: 1.5rem; 
+  right: 1.2rem; 
 }
 
 @media screen and (min-width: 480px) {
   .nav__info li {
     top: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .nav__info li:first-child {
-    left: 1.2rem;
-  }
-
-  .nav__info li:last-child {
-    right: 1.2rem; 
   }
 }
 
