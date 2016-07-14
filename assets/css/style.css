@@ -760,6 +760,20 @@ li p {
   left: 1.2rem;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.nav__info li:nth-child(2) {
+  left: 50%;
+  margin-left: -45px;
+  visibility: hidden;
+}
+
+.nav__info li:nth-child(2).visible {
+  visibility: visible;
+}
+
 .nav__info li:last-child {
   right: 1.2rem; 
 }
