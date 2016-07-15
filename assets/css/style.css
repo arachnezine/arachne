@@ -1398,3 +1398,63 @@ sup {
     height: 27rem;
   }
 }
+
+/* Error */
+
+.error {
+  cursor: help;
+}
+
+.error--box__outside {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+
+  border: 0.05rem solid #222;
+  height: 50vh;
+
+  background-color: currentColor;
+}
+
+.error--box__inside--one {
+  /*display: inline-block;*/
+  width: 30%;
+  height: 50vh;
+  border: 0.05rem solid #222;
+  margin: 1.5rem;
+
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
+  background-color: #F6F162;
+}
+
+.error--box__inside--two {
+  width: 30%;
+  height: 50%;
+  border: 0.05rem solid #222;
+  margin: 1.5rem;
+
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
+  background-color: #CF61DC;
+}
+
+0% {background-color: #CCDBFC;}
+  10% {background-color: #4343F3;}
+  25% {background-color: #1111FF;}
+  45% {background-color: #CF61DC;}
+  70% {background-color: #F6F162;}
+  85% {background-color: #70F589;}
+  100% {background-color: #04AD7B;}
