@@ -1259,32 +1259,34 @@ nav {
   width: 80%;
 }
 
-#nadia-de-vries .audio-player--wrapper {
-  width: 20%;
-  padding: 5rem 0;
-  /*border: 0.075rem solid #222;*/
+#nadia-de-vries .audio-player--container {
+  position: fixed;
+  top: 6rem;
+  right: 0.6rem;
+  width: 17.6%;
+  height: 100%;
 }
 
 #nadia-de-vries .audio-player--wrapper {
-  position: fixed;
-  top: 0px;
-  right: 0px;
+  width: 76vh;
   height: 100%;
+  position: absolute;
+  top: 2rem;
+  right: 0px;
+}
+
+#nadia-de-vries .button__audio-player {
+  width: 6.4rem;
+  background-color: #ffffff;
+  border: 0.075rem solid #222;
+  position: absolute;
+  top: -2rem;
+  right: 0;
 }
 
 #waveform {
   transform: translateX(100%) rotate(90deg);
   transform-origin: top left;
-}
-
-#nadia-de-vries .button__audio-player {
-  width: 100%;
-  background-color: #ffffff;
-  border: 0.075rem solid #222;
-}
-
-#nadia-de-vries canvas {
-  /*border: 0.075rem solid #222;*/
 }
 
 figure.essay {
