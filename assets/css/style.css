@@ -1239,6 +1239,54 @@ nav {
   }
 }
 
+#nadia-de-vries pre {
+  height: 50vh;
+}
+
+#nadia-de-vries h2 {
+  margin: 50vh 0 0 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+#nadia-de-vries .essay__main--content {
+  width: 80%;
+}
+
+#nadia-de-vries .audio-player--wrapper {
+  width: 20%;
+  padding: 5rem 0;
+  /*border: 0.075rem solid #222;*/
+}
+
+#nadia-de-vries .audio-player--wrapper {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+}
+
+#waveform {
+  transform: translateX(100%) rotate(90deg);
+  transform-origin: top left;
+}
+
+#nadia-de-vries .button__audio-player {
+  width: 100%;
+  background-color: #ffffff;
+  border: 0.075rem solid #222;
+}
+
+#nadia-de-vries canvas {
+  /*border: 0.075rem solid #222;*/
+}
+
 figure.essay {
   display: inline-block;
   margin: 1rem 0 0 0;
