@@ -1345,6 +1345,14 @@ nav {
   text-align: center;
 }
 
+.namesakes__poem-element--horizontal:first-child {
+  /*padding: 0 6rem 0 3.25rem;*/
+}
+
+.namesakes__poem-element--horizontal:last-child {
+  /*padding: 0 3.25rem 0 6rem;*/
+}
+
 @media screen and (min-width: 500px) {
   .scroll--vertical {
     width: 50%;
