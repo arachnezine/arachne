@@ -1311,11 +1311,8 @@ nav {
 /* Adrienne Herr */
 
 .namesakes__poems-wrapper {
-  flex-flow: nowrap;
-  justify-content: space-between;
-  overflow-x: auto;
 
-  margin: 1rem 0 0 0;
+  margin: 3rem 0;
   padding: 0.6rem 0.9rem;
   border: 0.05rem solid #04AD7B;
   -webkit-animation: pulse_bd 3s infinite alternate;
@@ -1324,10 +1321,43 @@ nav {
   transition: pulse_bd 3s infinite alternate;
 }
 
-.namesakes__poem-element {
-  padding: 0 6rem;
-  min-width: 15rem;
+.scroll--vertical {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 9rem;
+  overflow-x: auto;
+}
+
+.scroll--horizontal {
+  flex-flow: nowrap;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+
+.namesakes__poem-element--vertical {
+  width: 100%;
+  margin: 3rem 0;
   text-align: center;
+}
+
+.namesakes__poem-element--horizontal {
+  padding: 0 6rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .scroll--vertical {
+    width: 50%;
+    height: 9rem;
+  }
+
+  .scroll--horizontal {
+    width: 50%;
+  }
+
+  .namesakes__poems__margin-left {
+    margin-left: 50%;
+  }
 }
 
 
