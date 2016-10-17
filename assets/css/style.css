@@ -1241,6 +1241,11 @@ nav {
 
 #nadia-de-vries pre {
   height: 50vh;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;
 }
 
 #nadia-de-vries h2 {
@@ -1257,37 +1262,76 @@ nav {
 
 #nadia-de-vries .essay__main--content {
   width: 80%;
+  z-index: 2;
 }
 
 #nadia-de-vries .audio-player--container {
   position: fixed;
   top: 6rem;
-  right: 0.6rem;
-  width: 17.6%;
+  left: 0;
+  width: 80%;
   height: 100%;
+  z-index: 1;
+}
+
+@media and screen (min-width: 500px) {
+  #nadia-de-vries .audio-player--container {
+    position: fixed;
+    top: 6rem;
+    right: 0.6rem;
+    /*width: 17.6%;*/
+    height: 100%;
+  }
 }
 
 #nadia-de-vries .audio-player--wrapper {
-  width: 76vh;
   height: 100%;
   position: absolute;
   top: 2rem;
   right: 0px;
+  left: 0px;
 }
 
 #nadia-de-vries .button__audio-player {
   width: 6.4rem;
-  background-color: #ffffff;
+  background-color: transparent;
   border: 0.075rem solid #222;
   position: absolute;
   top: -2rem;
   right: 0;
 }
 
-#waveform {
-  transform: translateX(100%) rotate(90deg);
-  transform-origin: top left;
+@media and screen (min-width: 500px)  {
+  #waveform {
+    transform: translateX(100%) rotate(90deg);
+    transform-origin: top left;
+  }
 }
+
+/* Adrienne Herr */
+
+.namesakes__poems-wrapper {
+  flex-flow: nowrap;
+  justify-content: space-between;
+  overflow-x: auto;
+
+  margin: 1rem 0 0 0;
+  padding: 0.6rem 0.9rem;
+  border: 0.05rem solid #04AD7B;
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
+}
+
+.namesakes__poem-element {
+  padding: 0 6rem;
+  min-width: 15rem;
+  text-align: center;
+}
+
+
+/* * * */
 
 figure.essay {
   display: inline-block;
