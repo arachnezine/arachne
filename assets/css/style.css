@@ -657,6 +657,46 @@ th {
   100% {color: #04AD7B;}
 }
 
+.border--all__flux {
+  border: 0.05rem solid #04AD7B;
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
+}
+
+.border--top__flux {
+  border-top: 0.05rem solid #04AD7B;
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
+}
+
+.border--right__flux {
+  border-right: 0.05rem solid #04AD7B;
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
+}
+
+.border--bottom__flux {
+  border-bottom: 0.05rem solid #04AD7B;
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
+}
+
+.border--right__flux {
+  border-right: 0.05rem solid #04AD7B;
+  -webkit-animation: pulse_bd 3s infinite alternate;
+  -moz-animation: pulse_bd 3s infinite alternate;
+  -o-transition: pulse_bd 3s infinite alternate;
+  transition: pulse_bd 3s infinite alternate;
+}
+
 html, body {
   font-family: 'liberation_sansregular';
 	font-size: 20px;
@@ -1311,14 +1351,8 @@ nav {
 /* Adrienne Herr */
 
 .namesakes__poems-wrapper {
-
   margin: 3rem 0;
   padding: 0.6rem 0.9rem;
-  border: 0.05rem solid #04AD7B;
-  -webkit-animation: pulse_bd 3s infinite alternate;
-  -moz-animation: pulse_bd 3s infinite alternate;
-  -o-transition: pulse_bd 3s infinite alternate;
-  transition: pulse_bd 3s infinite alternate;
 }
 
 .scroll--vertical {
@@ -1334,6 +1368,20 @@ nav {
   overflow-x: auto;
 }
 
+.scroll--horizontal-only {
+  flex-flow: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto; 
+}
+
+.namesakes__poem-element--horizontal--only {
+  padding: 1.5rem 3rem;
+  margin: 0 7.5rem;
+  text-align: center;
+  border: 5px inset #bc8f8f;
+}
+
 .namesakes__poem-element--vertical {
   width: 100%;
   margin: 3rem 0;
@@ -1343,14 +1391,6 @@ nav {
 .namesakes__poem-element--horizontal {
   padding: 0 6rem;
   text-align: center;
-}
-
-.namesakes__poem-element--horizontal:first-child {
-  /*padding: 0 6rem 0 3.25rem;*/
-}
-
-.namesakes__poem-element--horizontal:last-child {
-  /*padding: 0 3.25rem 0 6rem;*/
 }
 
 @media screen and (min-width: 500px) {
