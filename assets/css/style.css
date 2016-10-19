@@ -1365,9 +1365,20 @@ nav {
   right: 0;
 }
 
+.nadia-de-vries__button__audio-player:focus {
+  outline: transparent;
+}
+
 #waveform {
-  transform: translateX(100%) rotate(90deg);
-  transform-origin: top left;
+  display: none;
+}
+
+@media and screen (min-width: 500px) {
+  #waveform {
+    display: block;
+    transform: translateX(100%) rotate(90deg);
+    transform-origin: top left;
+  }
 }
 
 /* Adrienne Herr */
