@@ -11,8 +11,17 @@ var audio_player__wrapper = document.getElementsByClassName('audio-player--wrapp
 var audio_player = document.getElementsByClassName('audio-player');
 
 wavesurfer.on('ready', function(){
-    var shit = $('.audio-player').width($('.audio-player--wrapper').height());
-    console.log(shit);
+    var w_h = $(window).height();
+    var audio_player_pos_top = $('.nadia-de-vries__audio-player--container').offset().top;
+    var waverform_width = w_h - audio_player_pos_top;
+    console.log(w_h, audio_player_pos_top, waverform_width);
+    // $('#waveform').css('width', waverform_width);
+    // $('.nadia-de-vries__audio-player--wrapper').css('width', waverform_width);
+    
+    // temporary hack (works but visually not nice)
+    $('canvas').width(waverform_width * 1.1);
+    $('canvas').css('margin-top', 'auto');
+    $('canvas').css('margin-bottom', 'auto');
 });
 
 $('.nadia-de-vries__button__audio-player').on('click', function() {
