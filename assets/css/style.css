@@ -1324,12 +1324,12 @@ nav {
   display: flex;
 }
 
-#nadia-de-vries .essay__main--content {
+.nadia-de-vries__essay__main--content {
   width: 80%;
   z-index: 2;
 }
 
-#nadia-de-vries .audio-player--container {
+.nadia-de-vries__audio-player--container {
   position: fixed;
   top: 6rem;
   left: 0;
@@ -1339,7 +1339,7 @@ nav {
 }
 
 @media and screen (min-width: 500px) {
-  #nadia-de-vries .audio-player--container {
+  .nadia-de-vries__audio-player--container {
     position: fixed;
     top: 6rem;
     right: 0.6rem;
@@ -1348,7 +1348,7 @@ nav {
   }
 }
 
-#nadia-de-vries .audio-player--wrapper {
+.nadia-de-vries__audio-player--wrapper {
   height: 100%;
   position: absolute;
   top: 2rem;
@@ -1356,7 +1356,7 @@ nav {
   left: 0px;
 }
 
-#nadia-de-vries .button__audio-player {
+.nadia-de-vries__button__audio-player {
   width: 6.4rem;
   background-color: transparent;
   border: 0.075rem solid #222;
@@ -1365,11 +1365,9 @@ nav {
   right: 0;
 }
 
-@media and screen (min-width: 500px)  {
-  #waveform {
-    transform: translateX(100%) rotate(90deg);
-    transform-origin: top left;
-  }
+#waveform {
+  transform: translateX(100%) rotate(90deg);
+  transform-origin: top left;
 }
 
 /* Adrienne Herr */
