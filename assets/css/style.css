@@ -1389,62 +1389,31 @@ nav {
 
 /* Adrienne Herr */
 
+.section__adrienne-herr {
+  max-width: 100%;
+}
+
 .namesakes__poems-wrapper {
   margin: 3rem 0;
   padding: 0.6rem 0.9rem;
 }
 
-.scroll--vertical {
-  flex-flow: row wrap;
-  justify-content: space-between;
-  height: 9rem;
-  overflow-x: auto;
-}
-
 .scroll--horizontal {
-  flex-flow: nowrap;
-  justify-content: space-between;
-  overflow-x: auto;
-}
-
-.scroll--horizontal-only {
   flex-flow: nowrap;
   justify-content: space-between;
   align-items: center;
   overflow-x: auto; 
 }
 
-.namesakes__poem-element--horizontal--only {
+.namesakes__poem-element {
   padding: 1.5rem 3rem;
   margin: 0 7.5rem;
   text-align: center;
   border: 5px inset #bc8f8f;
 }
 
-.namesakes__poem-element--vertical {
-  width: 100%;
-  margin: 3rem 0;
-  text-align: center;
-}
-
-.namesakes__poem-element--horizontal {
-  padding: 0 6rem;
-  text-align: center;
-}
-
-@media screen and (min-width: 500px) {
-  .scroll--vertical {
-    width: 50%;
-    height: 9rem;
-  }
-
-  .scroll--horizontal {
-    width: 50%;
-  }
-
-  .namesakes__poems__margin-left {
-    margin-left: 50%;
-  }
+.contributor--info__adrienne-herr p {
+  max-width: 39rem;
 }
 
 
