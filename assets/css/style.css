@@ -1410,10 +1410,10 @@ nav {
 }
 
 .namesakes__poem-element {
-  margin: 0 7.5rem;
+  margin: 0 9rem;
   padding: 1.5rem 3rem;
   text-align: center;
-  border: 5px inset #bc8f8f;
+  border: 5px inset #87FF78;
 }
 
 .contributor--info__adrienne-herr p {
@@ -1567,4 +1567,8 @@ sup {
 
 .archive--button {
   display: inline-block;
+}
+
+.archive--list__element p {
+  margin: 0 0 1rem 0;
 }
