@@ -725,7 +725,7 @@ html, body {
 
 pre, code {
   font-family: 'liberation_sansregular';
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -756,7 +756,7 @@ a:hover {
   background-color: currentColor;
 }
 
-p, a, li {
+p, a, li, code {
   font-size: 85%;
 }
 
@@ -765,7 +765,7 @@ p > a, li > a, li > p {
 }
 
 @media screen and (min-width: 600px) {
-  p, a, li {
+  p, a, li, code {
     font-size: 100%;
   }
 }
@@ -1413,7 +1413,8 @@ nav {
   margin: 0 9rem;
   padding: 1.5rem 3rem;
   text-align: center;
-  border: 5px inset #bc8f8f;
+  border: 5px inset #87FF78;
+  /*border: 5px inset #bc8f8f;*/
 }
 
 .contributor--info__adrienne-herr p {
