@@ -1331,10 +1331,6 @@ nav {
   display: flex;
 }
 
-.nadia-de-vries__essay__main--content, .nadia-de-vries__footer > div {
-  /*z-index: 2;*/
-}
-
 .nadia-de-vries__audio-player--container {
   position: fixed;
   top: 6.15rem;
@@ -1342,7 +1338,6 @@ nav {
   width: 100%;
   height: auto;
   pointer-events: none;
-  /*z-index: 3;*/
 }
 
 @media screen and (min-width: 560px) {
