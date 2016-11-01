@@ -1331,9 +1331,8 @@ nav {
   display: flex;
 }
 
-.nadia-de-vries__essay__main--content {
-  width: 80%;
-  z-index: 2;
+.nadia-de-vries__essay__main--content, .nadia-de-vries__footer > div {
+  /*z-index: 2;*/
 }
 
 .nadia-de-vries__audio-player--container {
@@ -1342,7 +1341,8 @@ nav {
   right: 0.3rem;
   width: 100%;
   height: auto;
-  z-index: 1;
+  pointer-events: none;
+  /*z-index: 3;*/
 }
 
 @media screen and (min-width: 560px) {
@@ -1384,6 +1384,7 @@ nav {
 
 .nadia-de-vries__audio-player--wrapper {
   display: none;
+  pointer-events: auto;
 }
 
 @media screen and (min-width: 560px) {
