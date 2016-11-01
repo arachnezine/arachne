@@ -828,6 +828,10 @@ li p {
   }
 }
 
+.font__serif {
+  font-family: "autopiabold";
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'liberation_sansbold';
 }
@@ -1396,10 +1400,23 @@ nav {
 .section__adrienne-herr {
   max-width: 100%;
   padding: 0 0 3rem 0;
+  margin: 0 0.45rem 0 1.5rem;
 }
 
-.namesakes__poems-wrapper {
-  padding: 0.6rem 0.9rem;
+@media screen and (min-width: 600px) {
+  .section__adrienne-herr {
+    margin: 0 1.5rem;
+  }
+}
+
+.essay__main--content__author__adrienne-herr {
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .essay__main--content__author__adrienne-herr {
+    margin-bottom: 3rem;
+  }
 }
 
 .scroll--horizontal {
@@ -1407,14 +1424,40 @@ nav {
   justify-content: space-between;
   align-items: center;
   overflow-x: auto; 
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.namesakes__poems-wrapper {
+  padding: 0.6rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .namesakes__poems-wrapper {
+    padding: 0.6rem 0.9rem;
+  }  
 }
 
 .namesakes__poem-element {
-  margin: 0 9rem;
-  padding: 1.5rem 3rem;
+  margin: 0 3rem;
+  padding: 1.5rem;
   text-align: center;
   border: 5px inset #87FF78;
-  /*border: 5px inset #bc8f8f;*/
+}
+
+.namesakes__poems-wrapper:first-of-type > .namesakes__poem-element {
+  margin: 0 0 0 0;
+}
+
+.namesakes__poems-wrapper:last-child.namesakes__poem-element {
+  margin: 0 0 0 6rem;
+}
+
+@media screen and (min-width: 600px) {
+  .namesakes__poem-element {
+    margin: 0 9rem;
+    padding: 1.5rem 3rem;
+  }  
 }
 
 .contributor--info__adrienne-herr p {
@@ -1423,8 +1466,56 @@ nav {
 
 /* Goodiepal */
 
-.text-aling--center {
+.text-align--center {
   text-align: center;
+}
+
+.goodiepal__aside {
+  max-width: 50%;
+  height: 100%;
+  background-color: #F8F8F8;
+  overflow: scroll;
+  z-index: 1;
+}
+
+@media screen and (min-width: 500px) {
+  .goodiepal__aside {
+    max-width: 30%;
+  }
+}
+
+.goodiepal__aside__title {
+  margin: 0;
+}
+
+.goodiepal__aside p {
+  font-size: 0.8rem;
+}
+
+.goodiepal__aside--hide {
+  display: none;
+}
+
+.goodiepal__aside--show {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.goodiepal__button--extra {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.goodiepal__button--extra:hover {
+  -webkit-animation: pulse_bg 0.25s infinite alternate;
+  -moz-animation: pulse_bg 0.25s infinite alternate;
+  -o-transition: pulse_bg 0.25s infinite alternate;
+  transition: pulse_bg 0.25s infinite alternate;
 }
 
 /* * * */
@@ -1444,6 +1535,11 @@ figure.essay {
   figure.essay {
     padding: 0.9rem 1.5rem;
   }
+}
+
+.figure--media__multi {
+  display: block;
+  margin: 0 0 1.5rem 0;
 }
 
 .embed__essay {
