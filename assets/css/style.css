@@ -1509,6 +1509,7 @@ nav {
   left: 0;
   background-color: transparent;
   border: none;
+  outline: transparent;
 }
 
 .goodiepal__button--extra:hover {
