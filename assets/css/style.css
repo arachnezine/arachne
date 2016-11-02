@@ -760,7 +760,7 @@ p, a, li, code {
   font-size: 85%;
 }
 
-p > a, li > a, li > p {
+p > a, strong > a, em > a, li > a, li > p {
   font-size: 100%;
 }
 
@@ -1396,13 +1396,7 @@ nav {
 .section__adrienne-herr {
   max-width: 100%;
   padding: 0 0 3rem 0;
-  margin: 0 0.45rem 0 1.5rem;
-}
-
-@media screen and (min-width: 600px) {
-  .section__adrienne-herr {
-    margin: 0 1.5rem;
-  }
+  margin: 0 1.5rem;
 }
 
 .essay__main--content__author__adrienne-herr {
@@ -1424,12 +1418,12 @@ nav {
   -webkit-overflow-scrolling: touch;
 }
 
-.namesakes__poems-wrapper {
+.namesakes__poem-element__wrapper {
   padding: 0.6rem 0;
 }
 
 @media screen and (min-width: 600px) {
-  .namesakes__poems-wrapper {
+  .namesakes__poem-element__wrapper {
     padding: 0.6rem 0.9rem;
   }  
 }
@@ -1441,11 +1435,11 @@ nav {
   border: 5px inset #87FF78;
 }
 
-.namesakes__poems-wrapper:first-of-type > .namesakes__poem-element {
+.namesakes__poem-element__wrapper:first-of-type > .namesakes__poem-element {
   margin: 0 0 0 0;
 }
 
-.namesakes__poems-wrapper:last-child.namesakes__poem-element {
+.namesakes__poem-element__wrapper:last-of-type > .namesakes__poem-element {
   margin: 0 0 0 6rem;
 }
 
