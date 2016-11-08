@@ -1482,12 +1482,7 @@ nav {
   font-size: 0.8rem;
 }
 
-.goodiepal__aside--hide {
-  display: none;
-}
-
-.goodiepal__aside--show {
-  display: block;
+.goodiepal__aside {
   position: fixed;
   top: 0;
   right: 0;
