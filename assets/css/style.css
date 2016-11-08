@@ -157,6 +157,7 @@ template {
 
 a {
   background-color: transparent;
+  outline: transparent;
 }
 
 /**
@@ -771,7 +772,7 @@ p > a, strong > a, em > a, li > a, li > p {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 ul, ol, li {
@@ -1368,10 +1369,6 @@ nav {
   pointer-events: auto;
 }
 
-.nadia-de-vries__button__audio-player:focus {
-  outline: transparent;
-}
-
 @media screen and (min-width: 560px) {
   .nadia-de-vries__button__audio-player {
     left: auto;
@@ -1494,7 +1491,6 @@ nav {
   left: 0;
   background-color: transparent;
   border: none;
-  outline: transparent;
 }
 
 .goodiepal__button--extra:hover {
@@ -1508,6 +1504,7 @@ nav {
 
 figure.essay {
   display: inline-block;
+  /*text-align: center;*/
   margin: 1rem 0 0 0;
   padding: 0.6rem 0.9rem;
   border: 0.05rem solid #04AD7B;
