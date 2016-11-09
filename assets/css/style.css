@@ -719,6 +719,12 @@ th {
   transition: pulse_bd 3s infinite alternate;
 }
 
+.momentum-scrolling {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+}
+
 html, body {
   font-family: 'liberation_sansregular';
 	font-size: 20px;
