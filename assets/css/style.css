@@ -1461,6 +1461,9 @@ nav {
 }
 
 .goodiepal__aside {
+  position: fixed;
+  top: 78px;
+  right: 0;
   width: 100%;
   height: 100%;
   background-color: #F8F8F8;
@@ -1468,8 +1471,14 @@ nav {
   z-index: 1;
 }
 
+@media screen and (min-width: 600px) {
+  .goodiepal__aside {
+    top: 86px;
+  }
+}
+
 .goodiepal__aside--expand {
-  max-width: 50%;
+  width: 50%;
 }
 
 @media screen and (min-width: 500px) {
@@ -1486,12 +1495,6 @@ nav {
   font-size: 0.8rem;
 }
 
-.goodiepal__aside {
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
 .goodiepal__aside--button {
   position: fixed;
   bottom: 0;
@@ -1499,17 +1502,28 @@ nav {
   border: 0.075rem solid #222;
 }
 
-.goodiepal__aside--expand {
-  width: 30%;
-}
-
 .goodiepal__aside--button p {
   margin: 0;
 }
 
-.goodiepal__aside--button--collapse {
-  height: 100vh;
+.goodiepal__aside--collapse {
   width: 5vh;
+}
+
+.goodiepal__aside--button--collapse {
+  height: calc(100vh - 78px);
+  width: 5vh;
+}
+
+@media screen and (min-width: 600px) {
+  .goodiepal__aside--button--collapse {
+    height: calc(100vh - 86px);
+  }
+}
+
+.goodiepal__aside--full-height {
+  top: 0;
+  height: 100vh;
 }
 
 .goodiepal__aside--button--collapse p {
@@ -1517,14 +1531,6 @@ nav {
   word-wrap: break-word;
   margin: 0 auto;
   text-align: center;
-}
-
-.goodiepal__aside--collapse {
-  width: 5vh;
-}
-
-.goodiepal__aside__wrapper {
-  width: 100%;
 }
 
 /* Agustine Zegers */
