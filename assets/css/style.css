@@ -157,6 +157,9 @@ template {
 
 a {
   background-color: transparent;
+}
+
+a, button {
   outline: transparent;
 }
 
