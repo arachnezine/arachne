@@ -1461,15 +1461,19 @@ nav {
 }
 
 .goodiepal__aside {
-  max-width: 50%;
+  width: 100%;
   height: 100%;
   background-color: #F8F8F8;
   overflow: scroll;
   z-index: 1;
 }
 
+.goodiepal__aside--expand {
+  max-width: 50%;
+}
+
 @media screen and (min-width: 500px) {
-  .goodiepal__aside {
+  .goodiepal__aside--expand {
     max-width: 30%;
   }
 }
@@ -1486,6 +1490,41 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
+}
+
+.goodiepal__aside--button {
+  position: fixed;
+  bottom: 0;
+  background-color: #F8F8F8;
+  border: 0.075rem solid #222;
+}
+
+.goodiepal__aside--expand {
+  width: 30%;
+}
+
+.goodiepal__aside--button p {
+  margin: 0;
+}
+
+.goodiepal__aside--button--collapse {
+  height: 100vh;
+  width: 5vh;
+}
+
+.goodiepal__aside--button--collapse p {
+  width: 0.5rem;
+  word-wrap: break-word;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.goodiepal__aside--collapse {
+  width: 5vh;
+}
+
+.goodiepal__aside__wrapper {
+  width: 100%;
 }
 
 /* Agustine Zegers */
