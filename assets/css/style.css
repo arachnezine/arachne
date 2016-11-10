@@ -1467,27 +1467,31 @@ nav {
 }
 
 .goodiepal__aside {
-  position: fixed;
-  top: 78px;
-  right: 0;
   height: 100%;
   background-color: #F8F8F8;
   overflow: scroll;
   z-index: 1;
 }
 
+.goodiepal__aside--expand {
+  position: fixed;
+  height: 100%;
+  top: 78px;
+  right: 0;
+}
+
 @media screen and (min-width: 600px) {
-  .goodiepal__aside {
+  .goodiepal__aside--expand {
     top: 86px;
   }
 }
 
-.goodiepal__aside--expand, .goodiepal__aside--button--expand {
+.goodiepal__aside, .goodiepal__aside--button--expand {
   width: 50%;
 }
 
 @media screen and (min-width: 500px) {
-  .goodiepal__aside--expand, .goodiepal__aside--button--expand {
+  .goodiepal__aside, .goodiepal__aside--button--expand {
     max-width: 30%;
   }
 }
@@ -1510,33 +1514,28 @@ nav {
 }
 
 .goodiepal__aside--collapse {
-  width: 5vh;
-  overflow-y: hidden;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 27px;
 }
 
 .goodiepal__aside--button--expand {
   position: fixed;
   bottom: 0;
+  right: 0;
 }
 
-.goodiepal__aside--button--collapse {
-  position: fixed;
-  bottom: 0;
-  height: calc(100vh - 78px);
-  width: 5vh;
+.goodiepal__aside__wrapper {
+  padding: 0 0 0.9rem 0;
 }
 
-@media screen and (min-width: 600px) {
-  .goodiepal__aside--button--collapse {
-    height: calc(100vh - 86px);
-  }
+.goodiepal__aside__wrapper--collapse {
+  visibility: hidden;
 }
 
-.goodiepal__aside--button--collapse p {
-  width: 0.5rem;
-  word-wrap: break-word;
-  margin: 0 auto;
-  text-align: center;
+.goodiepal__aside__wrapper--expand {
+  visibility: visible;
 }
 
 .goodiepal__aside--full-height {
