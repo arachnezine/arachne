@@ -1490,7 +1490,7 @@ nav {
   width: 50%;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
   .goodiepal__aside, .goodiepal__aside--button--expand {
     max-width: 30%;
   }
