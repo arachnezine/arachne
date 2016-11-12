@@ -1346,6 +1346,7 @@ nav {
   top: 6.15rem;
   right: 0.3rem;
   width: 100%;
+  max-width: 90vh;
   height: auto;
   pointer-events: none;
 }
@@ -1561,6 +1562,19 @@ nav {
     margin: 12rem 0 30rem 0;
   }
 }
+
+/* * * */
+
+/* Fish Narc and Chai Tea */
+
+.fish-narc-chai-tea--wrapper {
+  max-width: 100%;
+}
+
+.fish-narc-chai-tea--text-section {
+  border-bottom: none;
+}
+
 /* * * */
 
 figure.essay {
