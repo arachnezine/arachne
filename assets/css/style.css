@@ -1569,6 +1569,8 @@ nav {
 
 .fish-narc-chai-tea--wrapper {
   max-width: 100%;
+  margin: 0 1.5rem;
+  padding: 0 0 3rem 0;
 }
 
 .fish-narc-chai-tea--text-section {
