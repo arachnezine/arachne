@@ -539,193 +539,171 @@ th {
 
 /* + + + + */
 
-/* colors Issues #00 and #01*/
-
-/* background */
-@-webkit-keyframes pulse_bg {
-  0% {background-color: #CCDBFC;}
-  10% {background-color: #4343F3;}
-  25% {background-color: #1111FF;}
-  45% {background-color: #CF61DC;}
-  70% {background-color: #F6F162;}
-  85% {background-color: #70F589;}
-  100% {background-color: #04AD7B;}
-}
-
-@-moz-keyframes pulse_bg {
-  0% {background-color: #CCDBFC;}
-  10% {background-color: #4343F3;}
-  25% {background-color: #1111FF;}
-  45% {background-color: #CF61DC;}
-  70% {background-color: #F6F162;}
-  85% {background-color: #70F589;}
-  100% {background-color: #04AD7B;}
-}
-
-@-o-keyframes pulse_bg {
-  0% {background-color: #CCDBFC;}
-  10% {background-color: #4343F3;}
-  25% {background-color: #1111FF;}
-  45% {background-color: #CF61DC;}
-  70% {background-color: #F6F162;}
-  85% {background-color: #70F589;}
-  100% {background-color: #04AD7B;}
-}
-
-@keyframes pulse_bg {
-  0% {background-color: #CCDBFC;}
-  10% {background-color: #4343F3;}
-  25% {background-color: #1111FF;}
-  45% {background-color: #CF61DC;}
-  70% {background-color: #F6F162;}
-  85% {background-color: #70F589;}
-  100% {background-color: #04AD7B;}
-}
-
-/* border */
-@-webkit-keyframes pulse_bd {
-  0% {border-color: #CCDBFC;}
-  10% {border-color: #4343F3;}
-  25% {border-color: #1111FF;}
-  45% {border-color: #CF61DC;}
-  70% {border-color: #F6F162;}
-  85% {border-color: #70F589;}
-  100% {border-color: #04AD7B;}
-}
-
-@-moz-keyframes pulse_bd {
-  0% {border-color: #CCDBFC;}
-  10% {border-color: #4343F3;}
-  25% {border-color: #1111FF;}
-  45% {border-color: #CF61DC;}
-  70% {border-color: #F6F162;}
-  85% {border-color: #70F589;}
-  100% {border-color: #04AD7B;}
-}
-
-@-o-keyframes pulse_bd {
-  0% {border-color: #CCDBFC;}
-  10% {border-color: #4343F3;}
-  25% {border-color: #1111FF;}
-  45% {border-color: #CF61DC;}
-  70% {border-color: #F6F162;}
-  85% {border-color: #70F589;}
-  100% {border-color: #04AD7B;}
-}
-
-@keyframes pulse_bd {
-  0% {border-color: #CCDBFC;}
-  10% {border-color: #4343F3;}
-  25% {border-color: #1111FF;}
-  45% {border-color: #CF61DC;}
-  70% {border-color: #F6F162;}
-  85% {border-color: #70F589;}
-  100% {border-color: #04AD7B;}
-}
-
-/* text */
-@-webkit-keyframes pulse_ty {
-  0% {color: #CCDBFC;}
-  10% {color: #4343F3;}
-  25% {color: #1111FF;}
-  45% {color: #CF61DC;}
-  70% {color: #F6F162;}
-  85% {color: #70F589;}
-  100% {color: #04AD7B;}
-}
-
-@-moz-keyframes pulse_ty {
-  0% {color: #CCDBFC;}
-  10% {color: #4343F3;}
-  25% {color: #1111FF;}
-  45% {color: #CF61DC;}
-  70% {color: #F6F162;}
-  85% {color: #70F589;}
-  100% {color: #04AD7B;}
-}
-
-@-o-keyframes pulse_ty {
-  0% {color: #CCDBFC;}
-  10% {color: #4343F3;}
-  25% {color: #1111FF;}
-  45% {color: #CF61DC;}
-  70% {color: #F6F162;}
-  85% {color: #70F589;}
-  100% {color: #04AD7B;}
-}
-
-@keyframes pulse_ty {
-  0% {color: #CCDBFC;}
-  10% {color: #4343F3;}
-  25% {color: #1111FF;}
-  45% {color: #CF61DC;}
-  70% {color: #F6F162;}
-  85% {color: #70F589;}
-  100% {color: #04AD7B;}
-}
-
-/* * */
-
 /* Colors Issue #02 */
 
+/* background */
 @-webkit-keyframes pulse_bg_i-two {
   0% {background-color: #DFD5FD;}
-  25% {background-color: #0050F7;}
-  50% {background-color: #F4B93D;}
-  75% {background-color: #EA412C;}
+  25% {background-color: #03C98F;}
+  40% {background-color: #87FF78;}
+  55% {background-color: #FA523E;}
+  70% {background-color: #FA523E;}
+  85% {background-color: #FEAC4C;}
   100% {background-color: #FFF549;}
 }
 
-@-webkit-keyframes pulse_bg_i-two {
+@-moz-keyframes pulse_bg_i-two {
   0% {background-color: #DFD5FD;}
-  15% {background-color: #0050F7;}
-  30% {background-color: #FFA131;}
-  45% {background-color: #EA412C;}
-  70% {background-color: #FFF549;}
-  85% {background-color: #87FF78;}
-  100% {background-color: #0D7052;}
+  25% {background-color: #03C98F;}
+  40% {background-color: #87FF78;}
+  55% {background-color: #FA523E;}
+  70% {background-color: #FA523E;}
+  85% {background-color: #FEAC4C;}
+  100% {background-color: #FFF549;}
+}
+
+@-o-keyframes pulse_bg_i-two {
+  0% {background-color: #DFD5FD;}
+  25% {background-color: #03C98F;}
+  40% {background-color: #87FF78;}
+  55% {background-color: #FA523E;}
+  70% {background-color: #FA523E;}
+  85% {background-color: #FEAC4C;}
+  100% {background-color: #FFF549;}
+}
+
+@keyframes pulse_bg_i-two {
+  0% {background-color: #DFD5FD;}
+  25% {background-color: #03C98F;}
+  40% {background-color: #87FF78;}
+  55% {background-color: #FA523E;}
+  70% {background-color: #FA523E;}
+  85% {background-color: #FEAC4C;}
+  100% {background-color: #FFF549;}
+}
+
+/* border */
+@-webkit-keyframes pulse_bd_i-two {
+  0% {border-color: #DFD5FD;}
+  25% {border-color: #03C98F;}
+  40% {border-color: #87FF78;}
+  55% {border-color: #FA523E;}
+  70% {border-color: #FA523E;}
+  85% {border-color: #FEAC4C;}
+  100% {border-color: #FFF549;}
+}
+
+@-moz-keyframes pulse_bd_i-two {
+0% {border-color: #DFD5FD;}
+  25% {border-color: #03C98F;}
+  40% {border-color: #87FF78;}
+  55% {border-color: #FA523E;}
+  70% {border-color: #FA523E;}
+  85% {border-color: #FEAC4C;}
+  100% {border-color: #FFF549;}
+}
+
+@-o-keyframes pulse_bd_i-two {
+  0% {border-color: #DFD5FD;}
+  25% {border-color: #03C98F;}
+  40% {border-color: #87FF78;}
+  55% {border-color: #FA523E;}
+  70% {border-color: #FA523E;}
+  85% {border-color: #FEAC4C;}
+  100% {border-color: #FFF549;}
+}
+
+@keyframes pulse_bd_i-two {
+  0% {border-color: #DFD5FD;}
+  25% {border-color: #03C98F;}
+  40% {border-color: #87FF78;}
+  55% {border-color: #FA523E;}
+  70% {border-color: #FA523E;}
+  85% {border-color: #FEAC4C;}
+  100% {border-color: #FFF549;}
+}
+
+/* text */
+@-webkit-keyframes pulse_ty_i-two {
+  0% {color: #DFD5FD;}
+  25% {color: #03C98F;}
+  40% {color: #87FF78;}
+  55% {color: #FA523E;}
+  70% {color: #FA523E;}
+  85% {color: #FEAC4C;}
+  100% {color: #FFF549;}
+}
+
+@-moz-keyframes pulse_ty_i-two {
+  0% {color: #DFD5FD;}
+  25% {color: #03C98F;}
+  40% {color: #87FF78;}
+  55% {color: #FA523E;}
+  70% {color: #FA523E;}
+  85% {color: #FEAC4C;}
+  100% {color: #FFF549;}
+}
+
+@-o-keyframes pulse_ty_i-two {
+  0% {color: #DFD5FD;}
+  25% {color: #03C98F;}
+  40% {color: #87FF78;}
+  55% {color: #FA523E;}
+  70% {color: #FA523E;}
+  85% {color: #FEAC4C;}
+  100% {color: #FFF549;}
+}
+
+@keyframes pulse_ty_i-two {
+  0% {color: #DFD5FD;}
+  25% {color: #03C98F;}
+  40% {color: #87FF78;}
+  55% {color: #FA523E;}
+  70% {color: #FA523E;}
+  85% {color: #FEAC4C;}
+  100% {color: #FFF549;}
 }
 
 /* * */
 
 .border--all__flux {
   border: 0.05rem solid #04AD7B;
-  -webkit-animation: pulse_bd 3s infinite alternate;
-  -moz-animation: pulse_bd 3s infinite alternate;
-  -o-transition: pulse_bd 3s infinite alternate;
-  transition: pulse_bd 3s infinite alternate;
+  -webkit-animation: pulse_bd_i-two 3s infinite alternate;
+  -moz-animation: pulse_bd_i-two 3s infinite alternate;
+  -o-transition: pulse_bd_i-two 3s infinite alternate;
+  transition: pulse_bd_i-two 3s infinite alternate;
 }
 
 .border--top__flux {
   border-top: 0.05rem solid #04AD7B;
-  -webkit-animation: pulse_bd 3s infinite alternate;
-  -moz-animation: pulse_bd 3s infinite alternate;
-  -o-transition: pulse_bd 3s infinite alternate;
-  transition: pulse_bd 3s infinite alternate;
+  -webkit-animation: pulse_bd_i-two 3s infinite alternate;
+  -moz-animation: pulse_bd_i-two 3s infinite alternate;
+  -o-transition: pulse_bd_i-two 3s infinite alternate;
+  transition: pulse_bd_i-two 3s infinite alternate;
 }
 
 .border--right__flux {
   border-right: 0.05rem solid #04AD7B;
-  -webkit-animation: pulse_bd 3s infinite alternate;
-  -moz-animation: pulse_bd 3s infinite alternate;
-  -o-transition: pulse_bd 3s infinite alternate;
-  transition: pulse_bd 3s infinite alternate;
+  -webkit-animation: pulse_bd_i-two 3s infinite alternate;
+  -moz-animation: pulse_bd_i-two 3s infinite alternate;
+  -o-transition: pulse_bd_i-two 3s infinite alternate;
+  transition: pulse_bd_i-two 3s infinite alternate;
 }
 
 .border--bottom__flux {
   border-bottom: 0.05rem solid #04AD7B;
-  -webkit-animation: pulse_bd 3s infinite alternate;
-  -moz-animation: pulse_bd 3s infinite alternate;
-  -o-transition: pulse_bd 3s infinite alternate;
-  transition: pulse_bd 3s infinite alternate;
+  -webkit-animation: pulse_bd_i-two 3s infinite alternate;
+  -moz-animation: pulse_bd_i-two 3s infinite alternate;
+  -o-transition: pulse_bd_i-two 3s infinite alternate;
+  transition: pulse_bd_i-two 3s infinite alternate;
 }
 
 .border--right__flux {
   border-right: 0.05rem solid #04AD7B;
-  -webkit-animation: pulse_bd 3s infinite alternate;
-  -moz-animation: pulse_bd 3s infinite alternate;
-  -o-transition: pulse_bd 3s infinite alternate;
-  transition: pulse_bd 3s infinite alternate;
+  -webkit-animation: pulse_bd_i-two 3s infinite alternate;
+  -moz-animation: pulse_bd_i-two 3s infinite alternate;
+  -o-transition: pulse_bd_i-two 3s infinite alternate;
+  transition: pulse_bd_i-two 3s infinite alternate;
 }
 
 .momentum-scrolling {
@@ -768,10 +746,10 @@ a {
 }
 
 a:hover {
-  -webkit-animation: pulse_bg 0.25s infinite alternate;
-  -moz-animation: pulse_bg 0.25s infinite alternate;
-  -o-transition: pulse_bg 0.25s infinite alternate;
-  transition: pulse_bg 0.25s infinite alternate;
+  -webkit-animation: pulse_bg_i-two 0.25s infinite alternate;
+  -moz-animation: pulse_bg_i-two 0.25s infinite alternate;
+  -o-transition: pulse_bg_i-two 0.25s infinite alternate;
+  transition: pulse_bg_i-two 0.25s infinite alternate;
   background-color: currentColor;
 }
 
@@ -868,10 +846,10 @@ blockquote {
   padding: 0.6rem 0.9rem;
   max-width: 80%;
   border: 0.05rem solid #04AD7B;
-  -webkit-animation: pulse_bd 3s infinite alternate;
-  -moz-animation: pulse_bd 3s infinite alternate;
-  -o-transition: pulse_bd 3s infinite alternate;
-  transition: pulse_bd 3s infinite alternate;
+  -webkit-animation: pulse_bd_i-two 3s infinite alternate;
+  -moz-animation: pulse_bd_i-two 3s infinite alternate;
+  -o-transition: pulse_bd_i-two 3s infinite alternate;
+  transition: pulse_bd_i-two 3s infinite alternate;
 }
 
 @media screen and (min-width: 600px) {
@@ -890,10 +868,10 @@ blockquote > p+p {
 
 .keep-in-place__wrapper {
   padding: 0.5rem 1.5rem 4.5rem 1.5rem;
-  -webkit-animation: pulse_bg 18s infinite alternate;
-  -moz-animation: pulse_bg 18s infinite alternate;
-  -o-transition: pulse_bg 18s infinite alternate;
-  transition: pulse_bg 18s infinite alternate;
+  -webkit-animation: pulse_bg_i-two 18s infinite alternate;
+  -moz-animation: pulse_bg_i-two 18s infinite alternate;
+  -o-transition: pulse_bg_i-two 18s infinite alternate;
+  transition: pulse_bg_i-two 18s infinite alternate;
   background-color: #67FFA9;
 }
 
@@ -1131,10 +1109,10 @@ section h4 {
 .title--serif {
   font-family: 'autopiabold';
   margin-top: 0; 
-  -webkit-animation: pulse_ty 3s infinite alternate;
-  -moz-animation: pulse_ty 3s infinite alternate;
-  -o-transition: pulse_ty 3s infinite alternate;
-  transition: pulse_ty 3s infinite alternate;
+  -webkit-animation: pulse_ty_i-two 3s infinite alternate;
+  -moz-animation: pulse_ty_i-two 3s infinite alternate;
+  -o-transition: pulse_ty_i-two 3s infinite alternate;
+  transition: pulse_ty_i-two 3s infinite alternate;
 }
 
 @media screen and (max-width: 340px) {
@@ -1148,10 +1126,10 @@ section h4 {
   padding: 0.9rem;
   text-align: center;
   border: 0.05rem solid #04AD7B;
-  -webkit-animation: pulse_bd 3s infinite alternate;
-  -moz-animation: pulse_bd 3s infinite alternate;
-  -o-transition: pulse_bd 3s infinite alternate;
-  transition: pulse_bd 3s infinite alternate;
+  -webkit-animation: pulse_bd_i-two 3s infinite alternate;
+  -moz-animation: pulse_bd_i-two 3s infinite alternate;
+  -o-transition: pulse_bd_i-two 3s infinite alternate;
+  transition: pulse_bd_i-two 3s infinite alternate;
 }
 
 @media scren and (min-width: 600px) {
@@ -1233,10 +1211,10 @@ nav {
   -ms-align-items: baseline;
   align-items: baseline;
   padding: 0.9rem;
-  -webkit-animation: pulse_bg 18s infinite alternate;
-  -moz-animation: pulse_bg 18s infinite alternate;
-  -o-transition: pulse_bg 18s infinite alternate;
-  transition: pulse_bg 18s infinite alternate;
+  -webkit-animation: pulse_bg_i-two 18s infinite alternate;
+  -moz-animation: pulse_bg_i-two 18s infinite alternate;
+  -o-transition: pulse_bg_i-two 18s infinite alternate;
+  transition: pulse_bg_i-two 18s infinite alternate;
   background-color: #67FFA9;
 }
 
@@ -1593,10 +1571,10 @@ figure.essay {
   margin: 1rem 0 0 0;
   padding: 0.6rem 0.9rem;
   border: 0.05rem solid #04AD7B;
-  -webkit-animation: pulse_bd 3s infinite alternate;
-  -moz-animation: pulse_bd 3s infinite alternate;
-  -o-transition: pulse_bd 3s infinite alternate;
-  transition: pulse_bd 3s infinite alternate;
+  -webkit-animation: pulse_bd_i-two 3s infinite alternate;
+  -moz-animation: pulse_bd_i-two 3s infinite alternate;
+  -o-transition: pulse_bd_i-two 3s infinite alternate;
+  transition: pulse_bd_i-two 3s infinite alternate;
 }
 
 @media screen and (min-width: 600px) {
@@ -1614,10 +1592,10 @@ figure.essay {
   margin: 1rem 0 0 0;
   padding: 0.6rem 0.9rem;
   border: 0.05rem solid #04AD7B;
-  -webkit-animation: pulse_bd 3s infinite alternate;
-  -moz-animation: pulse_bd 3s infinite alternate;
-  -o-transition: pulse_bd 3s infinite alternate;
-  transition: pulse_bd 3s infinite alternate;
+  -webkit-animation: pulse_bd_i-two 3s infinite alternate;
+  -moz-animation: pulse_bd_i-two 3s infinite alternate;
+  -o-transition: pulse_bd_i-two 3s infinite alternate;
+  transition: pulse_bd_i-two 3s infinite alternate;
 }
 
 .embed-container {
@@ -1667,10 +1645,10 @@ figcaption p, .embed__essay p {
 }
 
 .fancybox-nav span:hover {
-  -webkit-animation: pulse_bg 0.25s infinite alternate;
-  -moz-animation: pulse_bg 0.25s infinite alternate;
-  -o-transition: pulse_bg 0.25s infinite alternate;
-  transition: pulse_bg 0.25s infinite alternate;
+  -webkit-animation: pulse_bg_i-two 0.25s infinite alternate;
+  -moz-animation: pulse_bg_i-two 0.25s infinite alternate;
+  -o-transition: pulse_bg_i-two 0.25s infinite alternate;
+  transition: pulse_bg_i-two 0.25s infinite alternate;
   background-color: currentColor;
 }
 
