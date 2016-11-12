@@ -1548,7 +1548,7 @@ nav {
 
 .warning {
   padding: 0.9rem 1.5rem;
-  margin: 6rem 0 18rem 0;
+  margin: 0 0 18rem 0;
   font-size: 1.5rem;
 }
 
@@ -1559,7 +1559,7 @@ nav {
 @media screen and (min-width: 500px) {
   .warning {
     font-size: 2.4rem;
-    margin: 12rem 0 30rem 0;
+    margin: 0 0 30rem 0;
   }
 }
 
