@@ -1194,9 +1194,14 @@ footer p {
   width: auto;
 }
 
-@media screen and (min-width: 999px) {
+@media screen and (min-width: 600px) {
   footer {
     padding: 1.5rem 3rem;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  footer {
     flex-direction: row;
   }
 

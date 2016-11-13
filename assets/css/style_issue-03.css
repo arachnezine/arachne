@@ -1172,6 +1172,12 @@ footer p {
   width: auto;
 }
 
+@media screen and (min-width: 600px) {
+  footer {
+    padding: 1.5rem 3rem;
+  }
+}
+
 @media screen and (min-width: 999px) {
   footer {
     padding: 1.5rem 3rem;
@@ -1535,7 +1541,7 @@ nav {
 
 .warning {
   padding: 0.9rem 1.5rem;
-  margin: 0 0 18rem 0;
+  margin: 0 0 6rem 0;
   font-size: 1.5rem;
 }
 
@@ -1546,7 +1552,6 @@ nav {
 @media screen and (min-width: 500px) {
   .warning {
     font-size: 2.4rem;
-    margin: 0 0 30rem 0;
   }
 }
 
@@ -1554,14 +1559,16 @@ nav {
 
 /* Fish Narc and Chai Tea */
 
-.fish-narc-chai-tea--wrapper {
-  max-width: 100%;
-  margin: 0 1.5rem;
-  padding: 0 0 3rem 0;
-}
-
 .fish-narc-chai-tea--text-section {
   border-bottom: none;
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .fish-narc-chai-tea--wrapper {
+    max-width: 100%;
+    margin: 0 3rem;
+  }
 }
 
 /* * * */
@@ -1597,6 +1604,17 @@ figure.essay {
   -o-transition: pulse_bd_i-three 3s infinite alternate;
   transition: pulse_bd_i-three 3s infinite alternate;
 }
+
+.embed__essay__video--fullscreen {
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .embed__essay__video--fullscreen {
+    margin: 0 3rem;
+    max-width: 60rem;
+  }
+} 
 
 .embed-container {
   position: relative; 
