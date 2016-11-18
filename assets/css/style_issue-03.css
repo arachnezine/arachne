@@ -1609,12 +1609,22 @@ figure.essay {
   margin: 0;
 }
 
+.embed__essay__video--fullscreen figcaption {
+  margin: 0 3rem;
+  max-width: 60rem;
+}
+
 @media screen and (min-width: 1200px) {
   .embed__essay__video--fullscreen {
     margin: 0 3rem;
     max-width: 60rem;
   }
-} 
+
+  .embed__essay__video--fullscreen figcaption {
+    margin: 0;
+    max-width: auto;
+  }
+}
 
 .embed-container {
   position: relative; 
