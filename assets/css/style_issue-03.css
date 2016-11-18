@@ -842,7 +842,7 @@ h4 {
 }
 
 blockquote {
-  margin: 1rem 0;
+  margin: 1.8rem 0;
   padding: 0.6rem 0.9rem;
   max-width: 80%;
   border: 0.05rem solid #04AD7B;
@@ -1641,6 +1641,14 @@ figure.essay {
   }
 }
 
+.img__w-half {
+  width: 49.5%;
+}
+
+.mg-auto {
+  margin: 0 auto;
+}
+
 figcaption p, .embed__essay p {
   margin: 0;
 }
@@ -1698,10 +1706,6 @@ figcaption p, .embed__essay p {
     width: 30%;
     margin-left: 0;
   }
-}
-
-.essay__main--content blockquote+p {
-  margin: 0 0 1.8rem 0;
 }
 
 sup {
