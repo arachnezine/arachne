@@ -3,6 +3,20 @@ $(document).ready(function() {
   var waypoint = new Waypoint({
     element: document.getElementById('essay__content'),
     handler: function(direction) {
+    $('.goodiepal__aside--button').on('click', function() {
+      if($('.goodiepal__aside').hasClass('goodiepal__aside--top')) {
+        $('.goodiepal__aside--expand').removeClass('goodiepal__aside--full-height');
+      }
+    });
+    },
+    offset: function() {
+      return this.element.clientHeight
+    }
+  });
+
+  var waypoint = new Waypoint({
+    element: document.getElementById('essay__content'),
+    handler: function(direction) {
       if (direction == 'down') {
         $('.goodiepal__aside--expand').addClass('goodiepal__aside--full-height');
       } else {
