@@ -18,13 +18,11 @@ $(document).ready(function() {
     element: document.getElementById('essay__content'),
     handler: function(direction) {
       if (direction == 'down') {
+        $('.goodiepal__aside').removeClass('goodiepal__aside--top');
         $('.goodiepal__aside--expand').addClass('goodiepal__aside--full-height');
       } else {
         $('.goodiepal__aside--expand').removeClass('goodiepal__aside--full-height');
-        
-        $('.goodiepal__aside--button').on('click', function() {
-          $('.goodiepal__aside--expand').removeClass('goodiepal__aside--full-height');
-        });
+        $('.goodiepal__aside').addClass('goodiepal__aside--top');
       }
     }
   });
