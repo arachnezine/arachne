@@ -1681,6 +1681,10 @@ figure.essay {
   margin: 0 auto;
 }
 
+.mg-bottom__bs {
+  margin-bottom: 1rem;
+} 
+
 .no-border {
   margin: 0;
   padding: 0;
