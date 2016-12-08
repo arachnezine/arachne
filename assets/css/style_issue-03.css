@@ -1681,7 +1681,7 @@ figure.essay {
   margin: 0 auto;
 }
 
-.no-border {
+.no-mgpd {
   margin: 0;
   padding: 0;
 }
@@ -1777,7 +1777,7 @@ sup {
   margin: 2.4rem 0 0 0;
 }
 
-.contributor--info {
+.bibliography, .contributor--info {
   border-top: 0.05rem solid #222;
   margin: 2.4rem 0 0 0;
   padding: 1.5rem 0 0 0;
