@@ -1591,6 +1591,17 @@ figure.essay {
   }
 }
 
+.figure--container {
+  display: inline-block;
+  margin: 1rem 0 0 0;
+  padding: 0.6rem 0.9rem;
+  border: 0.05rem solid #04AD7B;
+  -webkit-animation: pulse_bd_i-three 3s infinite alternate;
+  -moz-animation: pulse_bd_i-three 3s infinite alternate;
+  -o-transition: pulse_bd_i-three 3s infinite alternate;
+  transition: pulse_bd_i-three 3s infinite alternate;
+}
+
 .figure--media__multi {
   display: block;
   margin: 0 0 1.5rem 0;
@@ -1656,12 +1667,50 @@ figure.essay {
   width: 49%;
 }
 
+@media screen and (min-width: 500px) {
+  .img__w-half--500 {
+    width: 49%;
+  }
+
+  .img__w-third--500 {
+    width: 33%;
+  }
+}
+
 .mg-auto {
   margin: 0 auto;
 }
 
+.no-border {
+  margin: 0;
+  padding: 0;
+}
+
+.figure--flex__inline {
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  -ms-align-items: baseline;
+  align-items: baseline;
+}
+
+.figure__inline {
+  display: inline-block;
+}
+
 figcaption p, .embed__essay p {
   margin: 0;
+}
+
+.figcaption--inline {
+  display: inline-block;
 }
 
 .fancybox {
